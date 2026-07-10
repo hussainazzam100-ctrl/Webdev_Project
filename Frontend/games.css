@@ -3,39 +3,221 @@
    margin: 0px;
    padding: 0px;
    box-sizing: border-box;
-
-}
-
-:target{
-    display: block!important;
-}
-
-.container{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 0px 10px;
 }
 
 header{
    background-color: #2e6f40;
    color: white;
-
+   height: 7vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-
-
-.header{
-    padding: 6px 0px 4px 0px;
+.nav_container{
     display: flex;
+    gap: 10px;
+}
+
+.container {
+   display: flex;
+   gap: 15px;
+   list-style: none;
 
 }
 
-.footer{
-    padding: 6px 0px 4px 0px;
+nav input {
+    width: 400px;
+    height: 5vh;
+}
+
+.filter li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   padding: 0;
+   height: 10vh;
+}
+
+.Categories {
+   display: flex;
+   gap: 50px;
+   justify-content: center;
+
+}
+
+#product_details{
+    gap: 15px;
+    background-color: #253D2c;
+    
+}
+
+#LAPTOPS,#HEADSETS,#MOUSE,#KEYBOARDS,#MONITORS,#RAM{
     display: flex;
-
+    gap: 25px;
+    margin-bottom: 40px;
+    align-items: stretch;
 }
+
+#L,#H,#M,#K,#mon,#r {
+    font-size: 30px;
+}
+
+#product_details img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    
+}
+
+#loq_l{
+    border: 1px solid #253D2c; 
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#acer_l { 
+    border: 1px solid  #253D2c; 
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#msi_l {
+    border: 1px solid  #253D2c; 
+    padding: 20px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#senzer_h{
+    border: 1px solid  #253D2c; 
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#corsair_h{
+    border: 1px solid  #253D2c; 
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#Fantech_h {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#Redragon_m {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#logitech_m {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#Razer_m {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#Redragon_k {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#Razer_k {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#iclever_k {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#MSI_mon {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#Acer_mon {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#Samsung_Mon {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#Kingston_r {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#Klevv_r {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
+#G.SKILL_r {
+    border: 1px solid  #253D2c;
+    padding: 16px;
+    background-color: #68BA7F;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .nav_container{
     margin-left: auto;
@@ -45,35 +227,26 @@ header{
     background-color: #CFFFDC;
 }
 
-.product_details{
-    background-color: #253D2c;
-}
 
-#LAPTOPS{
+#HEADSETS,#MOUSE,#KEYBOARDS,#MONITORS,#RAM{
     background-color: #68BA7F;
 }
 
-#HEADSETS{
-    background-color: #68BA7F;
-}
 
-#MOUSE{
-    background-color: #68BA7F;
-}
-
-#KEYBOARDS{
-    background-color: #68BA7F;
-}
-
-#MONITORS{
-    background-color: #68BA7F;
-}
-
-#RAM{
-    background-color: #68BA7F;
-}
 
 footer{
    background-color: #2e6f40;
    color: white; 
+   height: 7vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
+footer ul{
+   display: flex;
+   list-style: none;
+   gap: 15px;
+}
+
+
