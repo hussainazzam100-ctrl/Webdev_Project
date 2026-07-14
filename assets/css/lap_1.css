@@ -6,13 +6,18 @@
    
 }
 
+body {
+    background-color: #01162B;
+}
+
 header{
    background-color: #000000;
    color: white;
    height: 7vh;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
+   padding: 0 40px;
 }
 
 h1 {
@@ -40,7 +45,10 @@ h1 {
 nav input {
     border-radius: 5px;
     width: 350px;
-    height: 5vh;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 0 10px; 
+    background-color: white;
 }
 
 #loq_1{
@@ -51,8 +59,9 @@ nav input {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 20px;
-    gap: 250px;
+    gap: 30px;
     margin-bottom: 40px;
+    object-fit: contain;
 }
 
 #loq_1 img {
@@ -61,39 +70,55 @@ nav input {
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
+    max-width: 100%;
 }
 
 .loq_price {
     font-size: 15px;
 }
 
-#acer_l,#msi_l { 
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    
+.add_cart {
+    background-color: white;
+    margin-top: auto;
 }
 
-#acer_l img ,#msi_l img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-.Related_products {
-    background-color: #01162B;
+.Related_products{
+    background-color: #1a1e26;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 20px;
+    padding: 0 20px;
     gap: 25px;
     margin-bottom: 40px;
 }
 
 #rp {
-     color: #000000;
+    background-color: #1a1e26;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e0e6ed;
+    margin-bottom: 24px;
+    text-align: left;
+     
 }
+
+#acer_l,#msi_l { 
+    border: 1px solid #01162B;
+    padding: 24px;
+    background-color: #2CFF05;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    border-radius: 6px;
+
+    
+}
+
+#acer_l img ,#msi_l img {
+    display: block;
+    max-height: 200px;
+    max-width: 100%;
+    margin: 0 auto 24px auto;
+    object-fit: contain;
+    }
