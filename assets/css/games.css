@@ -14,6 +14,9 @@ header{
    align-items: center;
 }
 
+body {
+    background-color: #1a1e26;
+}
 h1 {
     color: #2CFF05;
 
@@ -72,7 +75,7 @@ nav input {
     
 }
 
-.LAPTOPS,.HEADSETS,.MOUSE,.KEYBOARDS,.MONITORS,.RAM{
+.product_grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 20px;
@@ -80,12 +83,12 @@ nav input {
     margin-bottom: 40px;
 }
 
-.L,.H,.M,.K,.mon,.r {
+.product-title {
     font-size: 30px;
     color: white;
 }
 
-#product_details img {
+.product-card img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -96,199 +99,7 @@ nav input {
     object-fit: contain;
 }
 
-#senzer_h img,#corsair_h img,#Fantech_h img, #Fantech_h img,#msi_l img,#Redragon_m img{
-    height: auto;
-}
-
-#loq_l{
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#acer_l { 
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    
-}
-
-#msi_l {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#senzer_h{
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#corsair_h{
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#Fantech_h {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#Redragon_m {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#logitech_m {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#Razer_m {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#Redragon_k {
-   border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#Razer_k {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#iclever_k {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#MSI_mon {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#Acer_mon {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#Samsung_Mon {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#Kingston_r {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#Klevv_r {
-    border: 1px solid #01162B;
-    color: #01162B;
-    padding: 16px;
-    background-color: #2CFF05;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#g_skill_r {
+.product-card {
     border: 1px solid #01162B;
     color: #01162B;
     padding: 16px;

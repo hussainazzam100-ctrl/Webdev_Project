@@ -51,20 +51,20 @@ nav input {
     background-color: white;
 }
 
-#loq_1{
+.main-product-card{
     border: 1px solid #01162B;
     background-color: #01162B;
     color: white;
     padding: 16px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 20px;
-    gap: 30px;
+    grid-template-columns: 1fr, 1fr;
+    padding: 40px;
+    gap: 40px;
     margin-bottom: 40px;
     object-fit: contain;
 }
 
-#loq_1 img {
+.main-product-card img {
     background-color: #2CFF05;
     display: block;
     margin-left: auto;
@@ -77,12 +77,12 @@ nav input {
     font-size: 15px;
 }
 
-.add_cart {
+.add-cart {
     background-color: white;
     margin-top: auto;
 }
 
-.Related_products{
+.related-products{
     background-color: #1a1e26;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -101,7 +101,7 @@ nav input {
      
 }
 
-#acer_l,#msi_l { 
+.product-card { 
     border: 1px solid #01162B;
     padding: 24px;
     background-color: #2CFF05;
@@ -115,7 +115,7 @@ nav input {
     
 }
 
-#acer_l img ,#msi_l img {
+.product-card img {
     display: block;
     max-height: 200px;
     max-width: 100%;
