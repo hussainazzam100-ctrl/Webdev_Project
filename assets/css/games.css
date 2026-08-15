@@ -15,12 +15,54 @@ header{
 }
 
 body {
-    background-color: #1a1e26;
+   background-color: #01162B;
 }
+
 h1 {
     color: #2CFF05;
 
 }
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+
+    background-color: #0d1d32;
+    color: white;
+
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+
+    transition: right 0.4s ease;
+
+    padding: 30px;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+.side-panel.active {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#panelContent {
+    margin-top: 60px;
+}
+
 
 #filter {
   background-color: #2D2D2D;
@@ -38,11 +80,48 @@ h1 {
     gap: 20px;
 }
 
-#container {
-   display: flex;
-   gap: 15px;
-   list-style: none;
+.account-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 
+.account-links button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.account-links svg {
+    width: 24px;
+    height: 24px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.account-links button:hover {
+    color: #7CFF4F;
+}
+
+.account-links button:hover svg {
+    transform: scale(1.1);
+}
+
+.account-links svg {
+    transition: transform 0.2s ease;
 }
 
 nav input {
@@ -71,7 +150,6 @@ nav input {
 
 #product_details{
     gap: 15px;
-    background-color: #01162B;
     
 }
 
@@ -103,7 +181,7 @@ nav input {
     border: 1px solid #01162B;
     color: #01162B;
     padding: 16px;
-    background-color: #2CFF05;
+    background-color: #097363;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,5 +217,4 @@ footer ul{
    list-style: none;
    gap: 15px;
 }
-
 

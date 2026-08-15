@@ -1,5 +1,7 @@
+// ==========================================
+// 1. PRODUCT DATA
+// ==========================================
 const products = [
-
     {
         id: 1,
         name: "Lenovo LOQ 15.6 FHD Gaming laptop",
@@ -15,7 +17,6 @@ const products = [
             "512 GB NVMe M.2 SSD"
         ]
     },
-
     {
         id: 2,
         name: "Acer Predator Helios Neo 16S AI Gaming Laptop",
@@ -31,7 +32,6 @@ const products = [
             "Intel Core Ultra 9 275HX"
         ]
     },
-
     {
         id: 3,
         name: "MSI Thin A15 B7VF-461US Gaming laptop",
@@ -47,7 +47,6 @@ const products = [
             "15.6 inch Full HD"
         ]
     },
-
     {
         id: 4,
         name: "SENZER SG600 Wireless Gaming Headset",
@@ -63,7 +62,6 @@ const products = [
             "Battery Capacity: 1200mAh"
         ]
     },
-
     {
         id: 5,
         name: "CORSAIR VOID RGB ELITE Wireless Gaming Headset",
@@ -79,7 +77,6 @@ const products = [
             "Battery Capacity: 1000mAh"
         ]
     },
-
     {
         id: 6,
         name: "Fantech TRINITY MH88 Multi Platform Gaming Headset",
@@ -95,7 +92,6 @@ const products = [
             "No Battery Capacity, it is a strictly wired gaming headset"
         ]
     },
-
     {
         id: 7,
         name: "Redragon M612 Predator RGB Gaming Mouse",
@@ -107,10 +103,9 @@ const products = [
         specifications: [
             "Compatibility: Windows and macOS",
             "Weight: 110 grams",
-            "Lighting: 5 dynamic RGB backlit modes",
+            "Lighting: 5 dynamic RGB backlit modes"
         ]
     },
-
     {
         id: 8,
         name: "Logitech G102 LightSync Gaming Wired Mouse - Black",
@@ -122,10 +117,9 @@ const products = [
         specifications: [
             "OS Compatibility: Windows 7 or later, macOS, Chrome OS",
             "Weight: 85 grams",
-            "Lighting: LIGHTSYNC RGB with approximately 16.8 million colors",
+            "Lighting: LIGHTSYNC RGB with approximately 16.8 million colors"
         ]
     },
-
     {
         id: 9,
         name: "Razer DeathAdder Essential Gaming Mouse - Black",
@@ -137,10 +131,9 @@ const products = [
         specifications: [
             "OS Compatibility: Windows 10 or later, macOS",
             "Weight: 96 grams",
-            "Lighting: single-color green lighting",
+            "Lighting: single-color green lighting"
         ]
     },
-
     {
         id: 10,
         name: "Redragon K671 Mechanical Gaming Keyboard Wired",
@@ -152,10 +145,9 @@ const products = [
         specifications: [
             "Special Features: Spill-proof design, dedicated Windows key lock, and macro editing support (via software)",
             "Keycaps: Double-shot ABS (or PBT depending on regional variation)",
-            "Compatibility: Windows (software), PC, and Mac",
+            "Compatibility: Windows (software), PC, and Mac"
         ]
     },
-
     {
         id: 11,
         name: "Razer Huntsman Mini 60% Mechanical Gaming Keyboard",
@@ -167,10 +159,9 @@ const products = [
         specifications: [
             "Switch Types: Razer Clicky Optical (Purple) or Linear Optical (Red)",
             "Polling Rate: Up to 1000 Hz Ultrapolling",
-            "Memory: Onboard hybrid storage for up to 5 profiles",
+            "Memory: Onboard hybrid storage for up to 5 profiles"
         ]
     },
-
     {
         id: 12,
         name: "iClever Solar Bluetooth, Wireless with Solar & Indoor Light Charging Keyboard",
@@ -185,7 +176,6 @@ const products = [
             "Power: Built-in solar panel and an auxiliary CR2032 coin cell battery slot for backup."
         ]
     },
-
     {
         id: 13,
         name: "MSI MAG 255XF 24.5inch FHD 300Hz IPS Gaming Monitor",
@@ -200,7 +190,6 @@ const products = [
             "Response Time: 0.5ms (GtG, Min.)"
         ]
     },
-
     {
         id: 14,
         name: "ACER Nitro VG271U 27 IPS WQHD (2560x1440) 180Hz Gaming Monitor",
@@ -215,7 +204,6 @@ const products = [
             "Response Time: 1ms (GtG) with overdrive up to 0.5ms (GtG)"
         ]
     },
-
     {
         id: 15,
         name: "SAMSUNG Odyssey G4 G40B FHD 240Hz Gaming Monitor",
@@ -230,7 +218,6 @@ const products = [
             "Response Time: 1ms (GtG, Min.)"
         ]
     },
-
     {
         id: 16,
         name: "Kingston FURY Beast RAM",
@@ -245,7 +232,6 @@ const products = [
             "Speeds Available: 3733 MT/s"
         ]
     },
-
     {
         id: 17,
         name: "KLEVV CRAS V RAM",
@@ -260,7 +246,6 @@ const products = [
             "Speeds Available: 6000 MT/s"
         ]
     },
-
     {
         id: 18,
         name: "G.SKILL RipjawsV RAM",
@@ -274,7 +259,220 @@ const products = [
             "Capacity: 32GB Kit",
             "Speed Ratings: 2133 MHz"
         ]
-    },
-]
+    }
+];
 
-console.log(products);
+// ==========================================
+// 2. HELPER FUNCTIONS
+// ==========================================
+
+// Reusable card markup generator
+function createProductCardHTML(product) {
+    return `
+      <div class="product-card" data-id="${product.id}">
+        <a href="product.html?id=${product.id}">
+          <img src="${product.image}" alt="${product.name}">
+        </a>
+        <h3>${product.name}</h3><br>
+        <p><b>MVR ${product.price.toLocaleString()} <s>MVR ${product.oldPrice.toLocaleString()}</s></b></p><br>
+        <button class="add-cart" onclick="addToCart(${product.id})">Add to Cart</button>
+      </div>
+    `;
+}
+
+// Global Add-to-Cart handler
+function addToCart(id) {
+    const product = products.find(p => p.id === id);
+    if (product) {
+        console.log(`Product added to cart: ${product.name}`);
+        // Insert your cart logic/state updates here
+    }
+}
+
+// ==========================================
+// 3. PAGE RENDERING LOGIC
+// ==========================================
+
+// Render Category Grids (Homepage)
+function displayProducts(productList = products) {
+    const containers = document.querySelectorAll('.product_grid');
+    containers.forEach(container => container.innerHTML = '');
+
+    productList.forEach(product => {
+        const container = document.querySelector(`.product_grid[data-category="${product.category}"]`);
+        if (container) {
+            container.innerHTML += createProductCardHTML(product);
+        }
+    });
+}
+
+// Render Search & Filter Page
+function renderFilterPage(productList) {
+    const container = document.querySelector('.products');
+    if (!container) return;
+
+    container.innerHTML = '';
+
+    if (productList.length === 0) {
+        container.innerHTML = '<p style="color: white; grid-column: 1/-1;">No products found matching your search.</p>';
+        return;
+    }
+
+    productList.forEach(product => {
+        container.innerHTML += createProductCardHTML(product);
+    });
+}
+
+// Render Product Detail Page
+function loadProductDetailPage() {
+    const mainCard = document.querySelector('.main-product-card');
+    if (!mainCard) return;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = parseInt(urlParams.get('id')) || 1;
+
+    const product = products.find(p => p.id === productId);
+    if (!product) return;
+
+    mainCard.setAttribute('data-id', product.id);
+    mainCard.querySelector('img').src = product.image;
+    mainCard.querySelector('img').alt = product.name;
+    mainCard.querySelector('h2').textContent = product.name;
+    mainCard.querySelector('h3').innerHTML = `MVR ${product.price.toLocaleString()} <s class="loq_price">MVR ${product.oldPrice.toLocaleString()}</s>`;
+
+    const specList = mainCard.querySelector('ul');
+    if (specList) {
+        specList.innerHTML = product.specifications.map(spec => `<li>${spec}</li>`).join('');
+    }
+
+    const relatedContainer = document.querySelector('.related-products');
+    if (relatedContainer) {
+        relatedContainer.innerHTML = '';
+        const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id);
+        
+        relatedProducts.forEach(rel => {
+            relatedContainer.innerHTML += createProductCardHTML(rel);
+        });
+    }
+}
+
+// ==========================================
+// 4. SIDE PANEL HANDLERS
+// ==========================================
+function openPanel(type) {
+    const panel = document.getElementById("sidePanel");
+    const content = document.getElementById("panelContent");
+    if (!panel || !content) return;
+
+    if (type === "cart") {
+        content.innerHTML = `
+            <h1>My Cart</h1>
+            <p>Your cart is currently empty.</p>
+            <button>Checkout</button>
+        `;
+    } else if (type === "wishlist") {
+        content.innerHTML = `
+            <h1>Wishlist</h1>
+            <p>Your wishlist is currently empty.</p>
+        `;
+    } else if (type === "login") {
+        content.innerHTML = `
+            <h1>Account Login</h1>
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+        `;
+    }
+
+    panel.classList.add("active");
+}
+
+function closePanel() {
+    const panel = document.getElementById("sidePanel");
+    if (panel) {
+        panel.classList.remove("active");
+    }
+}
+
+// ==========================================
+// 5. INITIALIZATION & EVENT LISTENERS
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+
+    // A. Render Homepage Category Grids
+    if (document.querySelector('.product_grid')) {
+        displayProducts();
+    }
+
+    // B. Render Product Detail Page
+    if (document.querySelector('.main-product-card')) {
+        loadProductDetailPage();
+    }
+
+    // C. Render Filter/Search Results Page
+    if (document.querySelector('.products')) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchParam = urlParams.get('search');
+        const categoryParam = urlParams.get('category');
+        const titleElement = document.getElementById('filter-title');
+
+        let matches = products;
+
+        if (categoryParam) {
+          const cleanCategory = categoryParam.toLowerCase().trim();
+
+          matches = products.filter(p => {
+             const prodCat = p.category.toLowerCase();
+
+             // Exact match
+             if (prodCat === cleanCategory) return true;
+
+             // Handles common plural vs singular cases (e.g., 'laptops' -> 'laptop', 'mice' -> 'mouse')
+             if (cleanCategory.startsWith(prodCat) || prodCat.startsWith(cleanCategory)) return true;
+             if (cleanCategory === 'mice' && prodCat === 'mouse') return true;
+
+             return false;
+        });
+
+        if (titleElement) {
+            titleElement.textContent = `${categoryParam.toUpperCase()} Products`;
+        }
+      }
+
+        renderFilterPage(matches);
+    }
+
+    // D. Global Live Search Event Listener
+    const searchInput = document.querySelector('nav input[type="search"]');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            const filteredProducts = products.filter(product => 
+                product.name.toLowerCase().includes(searchTerm) || 
+                product.category.toLowerCase().includes(searchTerm)
+            );
+            
+            // Filter homepage grids or search results container if present
+            if (document.querySelector('.product_grid')) {
+                displayProducts(filteredProducts);
+            } else if (document.querySelector('.products')) {
+                renderFilterPage(filteredProducts);
+            }
+        });
+    }
+
+    // E. Category Smooth Scroll Navigation
+    const categoryLinks = document.querySelectorAll('.Categories li');
+    categoryLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Reads category from data attribute if present, or falls back to text content
+        const rawCategory = link.dataset.category || link.textContent;
+        const categoryName = rawCategory.toLowerCase().trim();
+
+        // Redirects to filter.html with the selected category in the URL
+        window.location.href = `filter.html?category=${encodeURIComponent(categoryName)}`;
+      });
+    });
+});
