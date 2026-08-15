@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LLPLE7VQ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1LLPLE7VQ7', {
+    cookie_flags: 'SameSite=None;Secure;Max-Age=63072000'
+  });
+</script>
+
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Build your dream setup, with quality & reliable components, fully customizable to match your needs. Your one stop shop for gearing up to beat the rest of the competition.
+Just send us your specifications and we will handle the rest. 960 793-7835">
+        <meta name="keywords" content="octotech,octotechmv,maldives,gaming,laptop,gpu,graphic cards,it intel,ryzen,monitrs,company,maldives" />
+        <meta name="author" content="octechmv">
+
+
+        <title>Home | OCTOTECH</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="https://shop.octotech.mv/images/favicon.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="https://shop.octotech.mv/css/styles.css">
+        <link rel="stylesheet" href="https://shop.octotech.mv/css/custom.css?v=1766599077">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    </head>
+    <body>
+
+
+<div class="fixed-top">
+<!-- Top layer -->
+<nav class="navbar navbar-light bg-light  ">
+    <div class="container container-fluid px-3 px-lg-4">
+        <!-- Left: Logo -->
+        <a class="navbar-brand" href="/">
+            <img src="https://shop.octotech.mv/images/logo.svg" class="d-inline-block align-top">
+        </a>
+
+        <!-- Toggler for mobile view (stays on the right in mobile) -->
+        <div>
+                    <button class="navbar-toggler ml-auto d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+
+            <!-- Right: Search bar and social icons (desktop) -->
+            <div class="ml-auto d-flex align-items-center menu-box">
+                <!-- Search bar (full-width only on mobile) -->
+                <form class="search-box form-inline my-2 my-lg-0 w-100 w-lg-auto mobile-search">
+                    <input id="searchBox" class="form-control w-100" type="text" autocomplete="off" placeholder="Search..." />
+                    <div id="searchResults" class="result"></div>
+                </form>
+
+
+                <!-- Social icons (only visible on desktop) -->
+                <div class="d-none d-lg-flex ml-2">
+                                        <a href="https://www.facebook.com/octotechmv" class="mx-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18px" fill="#5E187C"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+                    <a href="https://www.instagram.com/octotechmv/" class="mx-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18px" fill="#8C1F8E"><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg></a>
+                    <a href="https://www.tiktok.com/@octotechmv" class="mx-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18px" fill="#5E187C"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a>
+                                   </div>
+            </div>
+    </div>
+</nav>
+
+<!-- Second Layer (Hidden in mobile until toggled) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- Collapsible Menu items and social icons in mobile -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/laptops">Laptops</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/monitors">Monitors</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/processors">Processors</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/motherboard">Motherboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/ram">RAM</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/storage">Storage</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/psu">PSU</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/gpu">GPU</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/cases">Cases</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/coolers">Coolers</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/mouse">Mouse</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/keyboards">Keyboards</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/headsets">Headsets</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://shop.octotech.mv/category/others">Others</a></li>
+
+
+                <!-- Social icons in mobile view -->
+                <li class="nav-item d-lg-none mb-2">
+                    <a href="https://www.facebook.com/octotechmv" class="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18px" fill="#fff"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+                </li>
+                <li class="nav-item d-lg-none mb-2">
+                    <a href="https://www.instagram.com/octotechmv/" class="" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18px" fill="#fff"><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+
+    <main>
+            <section class="pt-5 mt-5">
+        <div class="container px-4 px-lg-5 mt-3 mt-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-12">
+                    <div class="">
+
+                                                    <div>
+                                <div class="carousel-inner">
+
+                                        <div class="">
+                                            <a href="">
+                                                <img src="https://shop.octotech.mv/storage/carousels/im.jpg" class="d-block w-100" alt="">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5></h5>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Laptops</h3>
+                    <a href="https://shop.octotech.mv/category/Laptops" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/acer-aspire-go-15-ryzen-3-7320u-8gb-128gb" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/76yngeDmrOIrUhXPj1sjQltPDH4Z1kmGjRD4BrJT.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Acer Aspire Go 15 Ryzen 3 7320U 8GB 128GB</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 9,600.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 12,050</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">15.6&quot;</span>
+                                                                <span class="badge badge-secondary">ddr5</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/acer-predator-helios-neo-16s-ai-gaming-laptop-16-oled-240hz-ultra-9-rtx-5060" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/dPY8Fii3GVgglx9pi6lhPrA3puuasDqpLE4J6QSO.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Acer Predator Helios Neo 16S AI Gaming Laptop - 16&quot; OLED 240Hz Ultra 9 RTX 5060</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 37,900.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 43,500</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">ddr5</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                                <span class="badge badge-secondary">240hz</span>
+                                                                <span class="badge badge-secondary">16&quot;</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/msi-thin-a15-b7vf-461us-ryzen-5-rtx-4060-gaming-laptop" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/UtTpVEJJzkzS90UvQ2SA4tZCYDdu4HbVz7s2LUG2.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">MSI Thin A15 B7VF-461US - Ryzen 5 RTX 4060 Gaming laptop</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 20,950.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 28,200</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">15.6&quot;</span>
+                                                                <span class="badge badge-secondary">144Hz</span>
+                                                                <span class="badge badge-secondary">ddr5</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Monitors</h3>
+                    <a href="https://shop.octotech.mv/category/Monitors" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/msi-mag-255xf-245inch-fhd-300hz-ips-gaming-monitor" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/NokdZYswKKCtiHoH4LVajzWdhQ1v5fminpXHOqrw.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">MSI MAG 255XF 24.5inch FHD 300Hz IPS Gaming Monitor</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 5,450.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 6,700</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">ips</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/aoc-q27gazd-27-qd-oled-qhd-240hz-003s-gaming-monitor" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/jw0zC0SLNzUMufV37voN3ltOhuQ9Q3c0T5XwIfo4.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">AOC Q27GAZD 27&quot; QD OLED QHD 240Hz 0.03s Gaming Monitor</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 13,500.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 16,950</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">black</span>
+                                                                <span class="badge badge-secondary">240hz</span>
+                                                                <span class="badge badge-secondary">27&quot;</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/aoc-c27g4z-27-fast-va-280hz-03ms-fhd-curved-gaming-monitor" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/PFKIHr4PizhpZTtaRDW6fV7Mg38pH3YNcXdHBB6g.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">AOC C27G4Z 27&quot; Fast VA 280Hz 0.3ms FHD Curved Gaming Monitor</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 5,850.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 8,150</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">27&quot;</span>
+                                                                <span class="badge badge-secondary">curved</span>
+                                                                <span class="badge badge-secondary">fhd</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/samsung-s25bg400ec-25-odyssey-g4-g40b-fhd-240hz-gaming-monitor" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/i6Hzac9UgUAVurjJInNpcpBo3DCK9HSpWHK6d6UI.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">SAMSUNG S25BG400EC 25&quot; Odyssey G4 G40B FHD 240Hz Gaming Monitor</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 6,400.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 8,750</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">240hz</span>
+                                                                <span class="badge badge-secondary">fhd</span>
+                                                                <span class="badge badge-secondary">ips</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Processors</h3>
+                    <a href="https://shop.octotech.mv/category/Processors" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/intel-core-ultra-7-265k-20-cores-8-p-cores-12-e-cores-desktop-processor" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/EXytUJ4CAegWnZQI681IKN3psmemKWp6TFdGuljR.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Intel Core Ultra 7 265K - 20 cores (8 P-cores + 12 E-cores) Desktop Processor</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 8,650.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 11,750</span>
+                                                                    </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/amd-ryzen-5-9600x-6-core-12-thread-unlocked-processor" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/Tpla1zrt4BMIWyt5bbLyG6Qan5yCPn4TkncbIA04.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">AMD Ryzen 5 9600X 6-Core, 12-Thread Unlocked Processor</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 6,150.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 8,850</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">am5</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/amd-ryzen-7-9800x3d-8-core-16-thread-desktop-processor" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/mORfhk7WdM0RggMrJzktCmndfF0l7T9FwV7RgZeP.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">AMD Ryzen 7 9800X3D 8-Core, 16-Thread Desktop Processor</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 12,650.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 14,350</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">am5</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/amd-ryzen-7-7700x-8-core-16-thread-unlocked-desktop-processor" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/inr43GIjv8NWAlghvblrXisX4So0ZfGBh4kmVqtn.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">AMD Ryzen 7 7700X 8-Core, 16-Thread Unlocked Desktop Processor</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 7,350.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 10,300</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">am5</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Motherboards</h3>
+                    <a href="https://shop.octotech.mv/category/Motherboard" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/msi-pro-b850-s-wifi6e-atx-motherboard" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/Pvxg2Ops36iMchIjxcKGdo1UscxomdxiwO8HALJR.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">MSI PRO B850-S WIFI6E ATX Motherboard</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 4,700.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 6,250</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">am5</span>
+                                                                <span class="badge badge-secondary">ddr5</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                                <span class="badge badge-secondary">wi-fi</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/asus-z790-ayw-wifi-w-ii-intel-z790-atx-motherboard" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/jNWsuiOjq8dlOWCrpD4mVqbQf6unuZb6jUdomqCo.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">ASUS Z790-AYW WiFi W II Intel Z790 ATX Motherboard</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 5,600.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 6,850</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">white</span>
+                                                                <span class="badge badge-secondary">LGA 1700</span>
+                                                                <span class="badge badge-secondary">wi-fi</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/gigabyte-z890-ud-wifi6e-atx-motherboard" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/9B3oK2uDbMGHVYdsKq0tlYfgWP4IrgQsqopZZfdH.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">GIGABYTE Z890 UD WIFI6E ATX Motherboard</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 5,700.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 7,550</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">black</span>
+                                                                <span class="badge badge-secondary">wi-fi</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/gigabyte-b850-eagle-wifi6e-amd-am5-motherboard" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/SUkv3u7uzoqBD0KvYAg9xo84MehIb8P3wQHOdsMu.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">GIGABYTE B850 Eagle WIFI6E AMD AM5 Motherboard</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 5,300.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 7,150</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">am5</span>
+                                                                <span class="badge badge-secondary">ddr5</span>
+                                                                <span class="badge badge-secondary">atx</span>
+                                                                <span class="badge badge-secondary">wi-fi</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Memory</h3>
+                    <a href="https://shop.octotech.mv/category/Ram" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/corsair-vengeance-rgb-16gb-2-x-8gb-ddr5-6000-ram" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/Am1AMJybRweTERQJF8hRqzbtg7XC24uuvDY9zHyi.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">CORSAIR Vengeance RGB 16GB (2 x 8GB) DDR5 6000 RAM</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 7,100.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 9,150</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">ddr5</span>
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/klevv-cras-v-rgb-ddr5-32gb-2x16gb-6000mhz-cl30" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/fNnDBtdatLgA9fbRYFLGncNdoWH0SFeptOYxhrbN.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">KLEVV CRAS V RGB DDR5 32GB (2x16GB) 6000MHz CL30</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 12,850.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 14,350</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">ddr5</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/gskill-ripjawsv-ddr4-ram32gb-2x16gb-3200mhz" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/LIRwup6xrCOtWXoyWEhYWnWL49hDivYrYRFzamvN.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">G.SKILL RipjawsV DDR4 RAM32GB (2x16GB) 3200Mhz</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 6,950.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 7,700</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">black</span>
+                                                                <span class="badge badge-secondary">ddr4</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/kingston-fury-beast-64gb-2-x-32gb-ram-ddr5-5600-cl40" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/fiDic5N5tCWQMcMcJo87tqCCQGTMDf4HKtguEw0T.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Kingston FURY Beast 64GB (2 x 32GB) RAM DDR5 5600 CL40</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 21,600.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 28,500</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">ddr5</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Internet and external storage</h3>
+                    <a href="https://shop.octotech.mv/category/Storage" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/lexar-thor-pro-515gb-pcie-gen4x4-nvme-ssd" class="">
+                    <div class="card h-100">
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/EEQeLEiKIA8RiThCdrBqB0mj1Tu1RHPDxy7bt265.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Lexar Thor Pro 515GB PCIe Gen4X4 NVMe SSD</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 3,550.00</strong>
+                                                                    </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/lexar-thor-pro-1tb-pcie-gen4x4-nvme-ssd" class="">
+                    <div class="card h-100">
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/TZcyVzyNJqe5dP8D3CAgsgTzDNFBj7gFCJsNIvDn.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Lexar Thor Pro 1TB PCIe Gen4X4 NVMe SSD</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 4,850.00</strong>
+                                                                    </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/patriot-p410-1tb-gen4-nvme-m2-ssd" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/jRyUjZHjlTNBzYUTXdUsMQ8RMNwxpqbM2U4e14SM.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Patriot P410 1TB Gen4 NVMe M.2 SSD</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 4,500.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 6,000</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">gen4</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/samsung-990-evo-plus-ssd-2tb-pcie-gen4" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/WzBcMbAVIA3qJOo4kNjZ4OMgMwoh7DoWcjhNPK7W.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Samsung 990 EVO Plus SSD 2TB PCIe Gen4</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 8,800.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 12,050</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">gen4</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Power supply</h3>
+                    <a href="https://shop.octotech.mv/category/Psu" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/lian-li-rb-650w-power-supply-80-bronze" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/l7yK4fQESEhW3LepEkmTlDhHUJw32IPJAjQOgtBM.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Lian Li RB 650W Power Supply, 80+ Bronze</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 3,250.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 3,950</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">non-modular</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/be-quiet-pure-power-13-m-1000w-80-plus-gold" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/B9IFksYjitIJePdEfatmwk1nh4gbcskbJn6Aj1nG.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">be quiet Pure Power 13 M 1000W 80 plus gold</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 5,600.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 6,550</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">full-modular</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/corsair-rm1000e-cybenetics-gold-efficiency-atx-power-supply" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/tul0R9ZzGZcNeEzWczKfbvVQiZaHdRro8bbZodOw.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">CORSAIR RM1000e Cybenetics Gold Efficiency ATX Power Supply</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 6,550.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 8,300</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">full-modular</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/thermaltake-toughpower-gt-850w-80-gold-power-supply" class="">
+                    <div class="card h-100">
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/YCkfOIjiZLedRa9ag2XKy88iFsLzmBcDkcnl9Jno.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Thermaltake TOUGHPOWER GT 850W 80+ Gold Power Supply</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 4,850.00</strong>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">black</span>
+                                                                <span class="badge badge-secondary">fully modular</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Graphics card</h3>
+                    <a href="https://shop.octotech.mv/category/Gpu" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/asrock-radeon-rx-9060-xt-challenger-16gb-oc-graphics-card" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/nOmm5xVHfhxkItCSVPGDnzjlefNQvqyxZxGNDgT5.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">ASRock Radeon RX 9060 XT Challenger 16GB OC Graphics Card</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 13,800.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 16,250</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/sapphire-pulse-amd-radeon-rx-9060-xt-oc-16gb-graphics-card" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/fzIMc6YZVfthqlJNX0cXF9oVqrVAOJkSyFqhelRp.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Sapphire PULSE AMD Radeon RX 9060 XT 16GB Graphics Card</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 13,150.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 16,100</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/asus-dual-geforce-rtx-5060-ti-16gb-gddr7-oc-edition-graphics-card" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/qu7TxPXwQeqLl1ThmjTM7NCsc45DFTKS7Q2T4YyR.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">ASUS Dual GeForce RTX 5060 Ti 16GB GDDR7 OC Edition Graphics Card</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 17,150.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 19,550</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">nvidia</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/asus-dual-geforce-rtx-5060-8gb-gddr7-oc-graphics-card" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/9OK56WWZce8BWMjwwMoUfB5Puq7wj8onPljB2r7l.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">ASUS Dual GeForce RTX 5060 8GB GDDR7 OC Graphics card</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 11,200.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 13,200</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Chassis</h3>
+                    <a href="https://shop.octotech.mv/category/Cases" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/cooler-master-nr200p-sff-mini-itx-case" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/PwnLklDOOGUqiToKe7jSMOuSJXcCJakvgQGg5Vjn.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Cooler Master NR200P SFF Mini-ITX Case</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 3,350.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 4,550</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/sama-pc-v-nature-atx-mid-tower-white" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/VFbDMR5ImUC6sEl72XUJsuVTa8qWfQfjDZhlbmYY.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">SAMA PC V-nature ATX Mid Tower - White</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 2,650.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 3,700</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">white</span>
+                                                                <span class="badge badge-secondary">atx</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/sama-trajectory-atx-case-white" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/ZVV0r42DpwoWtk2XM7nyOPulodF2kg8eyuLp56dv.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">SAMA TRAJECTORY ATX Case - White</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 2,850.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 3,550</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">white</span>
+                                                                <span class="badge badge-secondary">atx</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/nzxt-h9-flow-dual-chamber-atx-mid-tower-case-white" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/ypLoA1OAKzzg8XaIFgiudMEi2BXQ25giRP4fIUhC.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">NZXT H9 Flow Dual-Chamber ATX Mid-Tower Case - White</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 4,900.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 6,550</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">white</span>
+                                                                <span class="badge badge-secondary">atx</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Coolers</h3>
+                    <a href="https://shop.octotech.mv/category/Coolers" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/thermalright-aqua-elite-360-v5-argb-white-cpu-liquid-cooler" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/eNhOvfj0TftJ3N1TOk78hUOYGFlix7LuAoCW5YDO.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Thermalright Aqua Elite 360 V5 ARGB White-CPU Liquid Cooler</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 2,350.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 2,950</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">am4</span>
+                                                                <span class="badge badge-secondary">am5</span>
+                                                                <span class="badge badge-secondary">white</span>
+                                                                <span class="badge badge-secondary">LGA 1700</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/thermalrlght-frozen-notte-240-white-argb-v2-water-cooling-cpu-cooler" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/aCIm4SNMCOzLbG2vTWgV30kyHNoa4BFuXsYhDEbf.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Thermalrlght Frozen Notte 240 White ARGB V2 Water Cooling CPU Cooler</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 2,200.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 2,500</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">white</span>
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                                <span class="badge badge-secondary">aio</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/arctic-liquid-freezer-iii-pro-360-a-rgb-aio-cpu-cooler" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/hOi2uBF68OgoNJv8pPVP2J8I6tRQXjcKuhAZyQ9a.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">ARCTIC Liquid Freezer III Pro 360 A-RGB AIO CPU Cooler</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 3,750.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 5,400</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                                <span class="badge badge-secondary">aio</span>
+                                                                <span class="badge badge-secondary">360mm</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/corsair-icue-link-h115i-rgb-280mm-aio-liquid-cpu-cooler-with-cue-link-system-hub" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/kIfNQR8abMNzN3T67CZXfGOY1PcH7SC2KQSWcW7b.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">CORSAIR iCUE Link H115i RGB 280mm AIO Liquid CPU Cooler with CUE Link System Hub</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 4,550.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 6,400</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Mouse</h3>
+                    <a href="https://shop.octotech.mv/category/Mouse" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/redragon-m612-predator-rgb-gaming-mouse" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/Ckw7kdkYWy6jF7qOuHZY71pQiQrG9uXPxmbUiX0h.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Redragon M612 Predator RGB Gaming Mouse</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 950.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 1,250</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wired</span>
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/razer-deathadder-essential-gaming-mouse-white" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/MJKqlJnvu5MrMlWpeLQGeVm5pFCjdjpQhsDXmKbA.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Razer DeathAdder Essential Gaming Mouse - White</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 900.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 1,350</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">white</span>
+                                                                <span class="badge badge-secondary">wired</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/razer-deathadder-essential-gaming-mouse-black" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/zAYNq5yNfjRB0E4FVQejSHDB1SYMGym23hyVnXiw.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Razer DeathAdder Essential Gaming Mouse - Black</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 1,000.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 1,350</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wired</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/steelseries-rival-105-gaming-mouse-black" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/y7X7no22rOYOuXSwvRyChf9lFW5hsp1JsduSVTXs.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">SteelSeries Rival 105 Gaming Mouse - Black</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 850.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 1,250</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wired</span>
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                                <span class="badge badge-secondary">matx</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Keyboards</h3>
+                    <a href="https://shop.octotech.mv/category/Keyboards" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/redragon-k671-mechanical-gaming-keyboard-wired" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/PuG9uGQeIXgfL2czobUxTuYMzvANxrbEUNELLqgd.webp"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Redragon K671 Mechanical Gaming Keyboard Wired</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 1,800.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 2,100</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wired</span>
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/razer-huntsman-mini-60-mechanical-gaming-keyboard" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/FIXRtW5hHJUlpq1mcTASQeq3T7Ydz1kUqYGWwTEJ.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Razer Huntsman Mini 60% Mechanical Gaming Keyboard</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 2,500.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 3,950</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wired</span>
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/iclever-solar-bluetooth-wireless-with-solar-indoor-light-charging-keyboard" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/zmIAwN086EosZJuWVD5GM2lMEk7SfWYi8aGGb3S3.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">iClever Solar Bluetooth, Wireless with Solar &amp; Indoor Light Charging Keyboard</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 800.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 1,500</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wireless</span>
+                                                                <span class="badge badge-secondary">bluetooth</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/epomaker-x-ajazz-ak820-pro-bluetooth-wireless-and-type-c-wired-mechanical-keyboard" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/nuni5DE9ukAI15sckQytGLkxeHCRm1SSLan2qvXq.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Epomaker x Ajazz AK820 Pro Bluetooth Wireless and Type-C Wired Mechanical Keyboard</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 1,600.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 2,500</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wireless</span>
+                                                                <span class="badge badge-secondary">bluetooth</span>
+                                                                <span class="badge badge-secondary">wired</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Speakers and headsets</h3>
+                    <a href="https://shop.octotech.mv/category/Headsets" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/logitech-g435-lightspeed-and-bluetooth-wireless-gaming-headset" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/WsfqS71W9RADBhcZUinEJeiQaBTDF0l2J8rCJGAS.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Logitech G435 LIGHTSPEED Wireless Gaming Headset</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 1,900.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 2,400</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wireless</span>
+                                                                <span class="badge badge-secondary">bluetooth</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/senzer-sg600-wireless-gaming-headset" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/Ppjb1WnqC4z7T9cWWjqbFvypW5VZO8jgVTUbodPN.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">SENZER SG600 Wireless Gaming Headset</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 1,000.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 1,500</span>
+                                                                    </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/fantech-trinity-mh88-multi-platform-gaming-headset" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/nverlVR7l28UyE6ntvPppzJ74UZ45wW8f8EGq0NE.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Fantech TRINITY MH88 Multi Platform Gaming Headset</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 1,000.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 1,100</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wired</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/razer-blackshark-v2-x-gaming-headset-71-surround-sound" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/tsxe4E3ijiLOwXjOZbMb6Gxmemtrjx1wdkaeuyxk.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Razer BlackShark V2 X Gaming Headset: 7.1 Surround Sound</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 1,850.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 2,650</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">wired</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<section class="pb-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="home-sub-heading">Other accessories</h3>
+                    <a href="https://shop.octotech.mv/category/Others" class="btn btn-view-all">View All </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/fantech-tower-ac3001s-antislip-rgb-headset-stand-white" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/hBfO9IBn6Nk362msooDXOcO4XYVNEja6AqVMCLtS.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Fantech Tower AC3001s AntiSlip RGB Headset Stand - white</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 750.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 950</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">white</span>
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/fantech-tower-ac3001s-antislip-rgb-headset-stand-black" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/u6lwpmZ1Mme9Hb2qJhyPHNmn5tRRcmLvikuS6xEm.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Fantech Tower AC3001s AntiSlip RGB Headset Stand - black</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 750.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 950</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/thermalright-tl-c12c-s-x3-cpu-fan-120mm-argb-black" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/hKw4Jr5ipZTgaIWp3Vba2AIoUMbf3aSwvO2Y2Xxd.png"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Thermalright TL-C12C-S X3 CPU Fan 120mm ARGB - Black</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 750.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 1,000</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                                <span class="badge badge-secondary">black</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col mb-4 product-box">
+                <a href="https://shop.octotech.mv/product/thermalright-tl-c12cw-s-x3-cpu-fan-120mm-white-argb" class="">
+                    <div class="card h-100">
+                        <!--  -->
+                        <!-- <div class="badge badge-warning position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                        <!--  -->
+
+                                                <div class="card-img-top" style='background:url("https://shop.octotech.mv/storage/products/2DXqLSsoColz8b2ZXcXpdlIOeveBX9MUOoosh1GL.jpg"); background-size: contain; background-position: center center; background-repeat: no-repeat;'></div>
+                                                <div class="card-body">
+                            <div class="text-left">
+                                <h5 class="product-name">Thermalright TL-C12CW-S X3 CPU Fan 120mm White ARGB</h5>
+                                <div class="product-price shop-price">
+                                    <strong>MVR 750.00</strong>
+                                                                        <span class="full-price" style="text-decoration: line-through; color: #9ba5b5; opacity: 0.5;">MVR 1,100</span>
+                                                                    </div>
+                            </div>
+                                                        <div class="product-tags">
+                                                                <span class="badge badge-secondary">white</span>
+                                                                <span class="badge badge-secondary">rgb</span>
+                                                            </div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+
+    </section>
+
+    </main>
+
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; 2026 | info@octotech.mv | 793-7835 | <a href="https://www.facebook.com/octotechmv" class="mx-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18px" fill="#fff"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a> |
+                    <a href="https://www.instagram.com/octotechmv/" class="mx-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18px" fill="#fff"><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg></a> |
+                    <a href="https://www.tiktok.com/@octotechmv" class="mx-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18px" fill="#fff"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a></p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="https://shop.octotech.mv/js/scripts.js"></script>
+
+
+    </body>
+</html>
