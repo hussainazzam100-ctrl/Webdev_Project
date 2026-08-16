@@ -1,6 +1,3 @@
-// ==========================================
-// 1. PRODUCT DATA
-// ==========================================
 const products = [
     {
         id: 1,
@@ -262,126 +259,251 @@ const products = [
     }
 ];
 
-// ==========================================
-// 2. HELPER FUNCTIONS
-// ==========================================
 
-// Reusable card markup generator
+
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+
 function createProductCardHTML(product) {
     return `
       <div class="product-card" data-id="${product.id}">
         <a href="product.html?id=${product.id}">
           <img src="${product.image}" alt="${product.name}">
         </a>
-        <h3>${product.name}</h3><br>
-        <p><b>MVR ${product.price.toLocaleString()} <s>MVR ${product.oldPrice.toLocaleString()}</s></b></p><br>
-        <button class="add-cart" onclick="addToCart(${product.id})">Add to Cart</button>
+        <h3>${product.name}</h3>
+        <p class="price-tag">MVR ${product.price.toLocaleString()} <s>MVR ${product.oldPrice.toLocaleString()}</s></p>
+        <div class="card-buttons">
+          <button class="add-cart" onclick="addToCart(${product.id})">Add to Cart</button>
+          <button class="add-wishlist" onclick="addToWishlist(${product.id})" title="Add to Wishlist">❤️</button>
+        </div>
       </div>
     `;
 }
 
-// Global Add-to-Cart handler
-function addToCart(id) {
-    const product = products.find(p => p.id === id);
-    if (product) {
-        console.log(`Product added to cart: ${product.name}`);
-        // Insert your cart logic/state updates here
-    }
-}
-
-// ==========================================
-// 3. PAGE RENDERING LOGIC
-// ==========================================
-
-// Render Category Grids (Homepage)
-function displayProducts(productList = products) {
-    const containers = document.querySelectorAll('.product_grid');
-    containers.forEach(container => container.innerHTML = '');
-
-    productList.forEach(product => {
-        const container = document.querySelector(`.product_grid[data-category="${product.category}"]`);
-        if (container) {
-            container.innerHTML += createProductCardHTML(product);
-        }
-    });
-}
-
-// Render Search & Filter Page
-function renderFilterPage(productList) {
-    const container = document.querySelector('.products');
-    if (!container) return;
-
-    container.innerHTML = '';
-
-    if (productList.length === 0) {
-        container.innerHTML = '<p style="color: white; grid-column: 1/-1;">No products found matching your search.</p>';
-        return;
-    }
-
-    productList.forEach(product => {
-        container.innerHTML += createProductCardHTML(product);
-    });
-}
-
-// Render Product Detail Page
-function loadProductDetailPage() {
-    const mainCard = document.querySelector('.main-product-card');
-    if (!mainCard) return;
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = parseInt(urlParams.get('id')) || 1;
-
-    const product = products.find(p => p.id === productId);
-    if (!product) return;
-
-    mainCard.setAttribute('data-id', product.id);
-    mainCard.querySelector('img').src = product.image;
-    mainCard.querySelector('img').alt = product.name;
-    mainCard.querySelector('h2').textContent = product.name;
-    mainCard.querySelector('h3').innerHTML = `MVR ${product.price.toLocaleString()} <s class="loq_price">MVR ${product.oldPrice.toLocaleString()}</s>`;
-
-    const specList = mainCard.querySelector('ul');
-    if (specList) {
-        specList.innerHTML = product.specifications.map(spec => `<li>${spec}</li>`).join('');
-    }
-
-    const relatedContainer = document.querySelector('.related-products');
-    if (relatedContainer) {
-        relatedContainer.innerHTML = '';
-        const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id);
-        
-        relatedProducts.forEach(rel => {
-            relatedContainer.innerHTML += createProductCardHTML(rel);
+function renderProductGrids() {
+    // Render products into category grids (e.g., Laptops, Headsets, Mouse)
+    const gridContainers = document.querySelectorAll('.product_grid');
+    if (gridContainers.length > 0) {
+        gridContainers.forEach(container => {
+            const category = container.getAttribute('data-category');
+            const categoryProducts = products.filter(p => p.category === category);
+            
+            if (categoryProducts.length > 0) {
+                container.innerHTML = categoryProducts
+                    .map(product => createProductCardHTML(product))
+                    .join('');
+            } else {
+                container.innerHTML = '<p style="color: #888;">No products available in this category.</p>';
+            }
         });
     }
+
+    // Render products for generic product pages (e.g., filter.html)
+    const generalProductsContainer = document.querySelector('.products');
+    if (generalProductsContainer && !document.querySelector('.main-product-card')) {
+        generalProductsContainer.innerHTML = products
+            .map(product => createProductCardHTML(product))
+            .join('');
+    }
 }
 
-// ==========================================
-// 4. SIDE PANEL HANDLERS
-// ==========================================
+
+function addToCart(productId) {
+    const existingItem = cart.find(item => item.id === productId);
+    
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({ id: productId, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateBadges();
+    alert("Item added to cart!");
+}
+
+
+function addToWishlist(productId) {
+    const index = wishlist.findIndex(id => id === productId);
+    
+    if (index > -1) {
+        wishlist.splice(index, 1);
+        alert("Removed from Wishlist!");
+    } else {
+        wishlist.push(productId);
+        alert("Item added to Wishlist!");
+    }
+
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    updateBadges();
+}
+
+
+function updateCartQuantity(productId, delta) {
+    const item = cart.find(i => i.id === productId);
+    if (!item) return;
+
+    item.quantity += delta;
+    if (item.quantity <= 0) {
+        cart = cart.filter(i => i.id !== productId);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateBadges();
+    openPanel('cart');
+}
+
+
+function removeFromCart(productId) {
+    cart = cart.filter(i => i.id !== productId);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateBadges();
+    openPanel('cart');
+}
+
+
+function removeFromWishlist(productId) {
+    wishlist = wishlist.filter(id => id !== productId);
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    updateBadges();
+    openPanel('wishlist');
+}
+
+
+function updateBadges() {
+    const cartText = document.querySelector('.cart-text');
+    if (cartText) {
+        cartText.textContent = `Cart`; /* Keep static text without (count) */
+    }
+
+    const wishlistText = document.querySelector('.wishlist-text');
+    if (wishlistText) {
+        wishlistText.textContent = `Wishlist`; /* Keep static text without (count) */
+    }
+}
+
+// Function to render filtered products on filter.html
+function loadFilteredProducts() {
+    const filterContainer = document.querySelector('.products');
+    if (!filterContainer || document.querySelector('.main-product-card')) return;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedCategory = urlParams.get('category');
+    const filterTitle = document.getElementById('filter-title');
+
+    let filtered = products;
+
+    if (selectedCategory) {
+        filtered = products.filter(p => p.category.toLowerCase() === selectedCategory.toLowerCase());
+        if (filterTitle) {
+            filterTitle.textContent = `${selectedCategory.toUpperCase()} Products`;
+        }
+    }
+
+    if (filtered.length > 0) {
+        filterContainer.innerHTML = filtered.map(p => createProductCardHTML(p)).join('');
+    } else {
+        filterContainer.innerHTML = `<p style="color: #888;">No products found in category "${selectedCategory}".</p>`;
+    }
+}
+
+// Attach click listeners to category tabs (game_content.html)
+function setupCategoryFilters() {
+    const categoryButtons = document.querySelectorAll('.Categories li');
+    
+    categoryButtons.forEach(button => {
+        button.style.cursor = 'pointer';
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            if (category) {
+                // Redirect to filter.html with the selected category as a query parameter
+                window.location.href = `filter.html?category=${category}`;
+            }
+        });
+    });
+}
+
+
 function openPanel(type) {
     const panel = document.getElementById("sidePanel");
     const content = document.getElementById("panelContent");
     if (!panel || !content) return;
 
     if (type === "cart") {
-        content.innerHTML = `
-            <h1>My Cart</h1>
-            <p>Your cart is currently empty.</p>
-            <button>Checkout</button>
-        `;
+        if (cart.length === 0) {
+            content.innerHTML = `
+                <h2>My Cart</h2>
+                <p style="margin-top:20px;">Your cart is currently empty.</p>
+            `;
+        } else {
+            let total = 0;
+            let itemsHTML = cart.map(item => {
+                const product = products.find(p => p.id === item.id);
+                if (!product) return '';
+                const itemTotal = product.price * item.quantity;
+                total += itemTotal;
+                return `
+                    <div class="panel-item">
+                        <img src="${product.image}" alt="${product.name}">
+                        <div class="panel-item-details">
+                            <h4>${product.name}</h4>
+                            <p>MVR ${product.price.toLocaleString()} x ${item.quantity}</p>
+                            <div class="qty-controls">
+                                <button onclick="updateCartQuantity(${product.id}, -1)">-</button>
+                                <span>${item.quantity}</span>
+                                <button onclick="updateCartQuantity(${product.id}, 1)">+</button>
+                                <button class="remove-btn" onclick="removeFromCart(${product.id})">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            content.innerHTML = `
+                <h2>My Cart</h2>
+                <div class="panel-items-list" style="margin-top:20px;">${itemsHTML}</div>
+                <div class="panel-summary" style="margin-top:20px;">
+                    <h3>Total: MVR ${total.toLocaleString()}</h3>
+                    <button class="add-cart" style="width:100%; margin-top:15px;">Checkout</button>
+                </div>
+            `;
+        }
     } else if (type === "wishlist") {
-        content.innerHTML = `
-            <h1>Wishlist</h1>
-            <p>Your wishlist is currently empty.</p>
-        `;
+        if (wishlist.length === 0) {
+            content.innerHTML = `
+                <h2>Wishlist</h2>
+                <p style="margin-top:20px;">Your wishlist is currently empty.</p>
+            `;
+        } else {
+            let itemsHTML = wishlist.map(id => {
+                const product = products.find(p => p.id === id);
+                if (!product) return '';
+                return `
+                    <div class="panel-item">
+                        <img src="${product.image}" alt="${product.name}">
+                        <div class="panel-item-details">
+                            <h4>${product.name}</h4>
+                            <p>MVR ${product.price.toLocaleString()}</p>
+                            <button class="add-cart" onclick="addToCart(${product.id})" style="margin-top:6px; padding:4px 8px; font-size:0.8rem;">Move to Cart</button>
+                            <button class="remove-btn" onclick="removeFromWishlist(${product.id})">Remove</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            content.innerHTML = `
+                <h2>Wishlist</h2>
+                <div class="panel-items-list" style="margin-top:20px;">${itemsHTML}</div>
+            `;
+        }
     } else if (type === "login") {
         content.innerHTML = `
-            <h1>Account Login</h1>
-            <form>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button type="submit">Login</button>
+            <h2>Account Login</h2>
+            <form style="display:flex; flex-direction:column; gap:15px; margin-top:20px;">
+                <input type="email" placeholder="Email" style="padding:10px; border-radius:4px; border:1px solid #333; background:#2a2a2a; color:#fff;" required>
+                <input type="password" placeholder="Password" style="padding:10px; border-radius:4px; border:1px solid #333; background:#2a2a2a; color:#fff;" required>
+                <button type="submit" class="add-cart">Login</button>
             </form>
         `;
     }
@@ -396,83 +518,100 @@ function closePanel() {
     }
 }
 
-// ==========================================
-// 5. INITIALIZATION & EVENT LISTENERS
-// ==========================================
-document.addEventListener('DOMContentLoaded', () => {
 
-    // A. Render Homepage Category Grids
-    if (document.querySelector('.product_grid')) {
-        displayProducts();
+function loadProductDetailPage() {
+    const mainCard = document.querySelector('.main-product-card');
+    if (!mainCard) return;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = parseInt(urlParams.get('id')) || 1;
+
+    const product = products.find(p => p.id === productId);
+    if (!product) return;
+
+    mainCard.setAttribute('data-id', product.id);
+    mainCard.querySelector('img').src = product.image;
+    mainCard.querySelector('img').alt = product.name;
+    mainCard.querySelector('h2').textContent = product.name;
+    mainCard.querySelector('.price-tag').innerHTML = `MVR ${product.price.toLocaleString()} <s class="loq_price">MVR ${product.oldPrice.toLocaleString()}</s>`;
+
+    const specList = mainCard.querySelector('ul');
+    if (specList && product.specifications) {
+        specList.innerHTML = product.specifications.map(spec => `<li>${spec}</li>`).join('');
     }
 
-    // B. Render Product Detail Page
-    if (document.querySelector('.main-product-card')) {
-        loadProductDetailPage();
-    }
-
-    // C. Render Filter/Search Results Page
-    if (document.querySelector('.products')) {
-        const urlParams = new URLSearchParams(window.location.search);
-        const searchParam = urlParams.get('search');
-        const categoryParam = urlParams.get('category');
-        const titleElement = document.getElementById('filter-title');
-
-        let matches = products;
-
-        if (categoryParam) {
-          const cleanCategory = categoryParam.toLowerCase().trim();
-
-          matches = products.filter(p => {
-             const prodCat = p.category.toLowerCase();
-
-             // Exact match
-             if (prodCat === cleanCategory) return true;
-
-             // Handles common plural vs singular cases (e.g., 'laptops' -> 'laptop', 'mice' -> 'mouse')
-             if (cleanCategory.startsWith(prodCat) || prodCat.startsWith(cleanCategory)) return true;
-             if (cleanCategory === 'mice' && prodCat === 'mouse') return true;
-
-             return false;
-        });
-
-        if (titleElement) {
-            titleElement.textContent = `${categoryParam.toUpperCase()} Products`;
+    const relatedContainer = document.querySelector('.related-products');
+    if (relatedContainer) {
+        relatedContainer.innerHTML = '';
+        const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id);
+        
+        if (relatedProducts.length > 0) {
+            relatedProducts.forEach(rel => {
+                relatedContainer.innerHTML += createProductCardHTML(rel);
+            });
+        } else {
+            products.slice(0, 3).forEach(rel => {
+                if (rel.id !== product.id) {
+                    relatedContainer.innerHTML += createProductCardHTML(rel);
+                }
+            });
         }
-      }
-
-        renderFilterPage(matches);
     }
+}
 
-    // D. Global Live Search Event Listener
-    const searchInput = document.querySelector('nav input[type="search"]');
-    if (searchInput) {
+document.addEventListener('DOMContentLoaded', () => {
+    updateBadges();
+    loadProductDetailPage();
+    renderProductGrids()
+    loadFilteredProducts();
+    setupCategoryFilters();
+
+    const searchInput = document.querySelector('.search-container input[type="search"]');
+    const searchContainer = document.querySelector('.search-container');
+
+    if (searchInput && searchContainer) {
+        
+        const dropdown = document.createElement('div');
+        dropdown.className = 'search-dropdown';
+        dropdown.style.display = 'none';
+        searchContainer.appendChild(dropdown);
+
+
         searchInput.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase().trim();
+
+            if (!searchTerm) {
+                dropdown.style.display = 'none';
+                return;
+            }
+
             const filteredProducts = products.filter(product => 
                 product.name.toLowerCase().includes(searchTerm) || 
                 product.category.toLowerCase().includes(searchTerm)
             );
-            
-            // Filter homepage grids or search results container if present
-            if (document.querySelector('.product_grid')) {
-                displayProducts(filteredProducts);
-            } else if (document.querySelector('.products')) {
-                renderFilterPage(filteredProducts);
+
+            if (filteredProducts.length === 0) {
+                dropdown.innerHTML = '<div class="dropdown-item no-result">No products found</div>';
+            } else {
+                dropdown.innerHTML = filteredProducts.map(product => `
+                    <a href="product.html?id=${product.id}" class="dropdown-item">
+                        <img src="${product.image}" alt="${product.name}" />
+                        <div>
+                            <h4>${product.name}</h4>
+                            <p>MVR ${product.price.toLocaleString()}</p>
+                        </div>
+                    </a>
+                `).join('');
+            }
+
+            dropdown.style.display = 'block';
+        });
+
+    
+        document.addEventListener('click', (e) => {
+            if (!searchContainer.contains(e.target)) {
+                dropdown.style.display = 'none';
             }
         });
     }
-
-    // E. Category Smooth Scroll Navigation
-    const categoryLinks = document.querySelectorAll('.Categories li');
-    categoryLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        // Reads category from data attribute if present, or falls back to text content
-        const rawCategory = link.dataset.category || link.textContent;
-        const categoryName = rawCategory.toLowerCase().trim();
-
-        // Redirects to filter.html with the selected category in the URL
-        window.location.href = `filter.html?category=${encodeURIComponent(categoryName)}`;
-      });
-    });
 });
