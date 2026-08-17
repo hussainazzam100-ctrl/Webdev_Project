@@ -1,0 +1,260 @@
+[
+  {
+    "id": 1,
+    "name": "Lenovo LOQ 15.6 FHD Gaming laptop",
+    "category": "laptop",
+    "price": 29900,
+    "oldPrice": 34000,
+    "image": "https://shop.octotech.mv/storage/products/lsnA0rygVsLN6oVkRT5MKNEc0sd5WnvpZFUJNW49.png",
+    "description": "High-performance gaming laptop with AMD Ryzen 7 processor, RTX 5060 graphics, fast DDR5 memory, and NVMe storage for gaming and demanding workloads.",
+    "specification": [
+      "AMD Ryzen 7 250",
+      "NVIDIA RTX 5060",
+      "16GB RAM DDR5",
+      "512 GB NVMe M.2 SSD"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Acer Predator Helios Neo 16S AI Gaming Laptop",
+    "category": "laptop",
+    "price": 37000,
+    "oldPrice": 42450,
+    "image": "https://shop.octotech.mv/storage/products/dPY8Fii3GVgglx9pi6lhPrA3puuasDqpLE4J6QSO.png",
+    "description": "Premium gaming laptop featuring Intel Core Ultra 9 processor, OLED high refresh display, RTX 5060 graphics, and powerful hardware for competitive gaming.",
+    "specification": [
+      "16 inch OLED 240Hz",
+      "Ultra 9 RTX 5060",
+      "32GB RAM DDR5",
+      "Intel Core Ultra 9 275HX"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "MSI Thin A15 B7VF-461US Gaming laptop",
+    "category": "laptop",
+    "price": 20450,
+    "oldPrice": 27550,
+    "image": "https://shop.octotech.mv/storage/products/UtTpVEJJzkzS90UvQ2SA4tZCYDdu4HbVz7s2LUG2.png",
+    "description": "Affordable gaming laptop powered by AMD Ryzen 5 and RTX 4060 graphics, offering smooth gaming performance with a fast Full HD display.",
+    "specification": [
+      "AMD Ryzen 5",
+      "NVIDIA RTX 4060",
+      "16GB RAM DDR5",
+      "15.6 inch Full HD"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "SENZER SG600 Wireless Gaming Headset",
+    "category": "headset",
+    "price": 950,
+    "oldPrice": 1500,
+    "image": "https://shop.octotech.mv/storage/products/Ppjb1WnqC4z7T9cWWjqbFvypW5VZO8jgVTUbodPN.png",
+    "description": "Wireless gaming headset with noise-canceling microphone, long battery life, and multi-platform compatibility for gaming and communication.",
+    "specification": [
+      "Compatibility: PC, PS4, PS5, Mac, iPad, and mobile devices (Xbox requires wired mode only)",
+      "Impedance: 16 Ohms",
+      "Microphone: Retractable, omnidirectional, and noise-canceling",
+      "Battery Capacity: 1200mAh"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "CORSAIR VOID RGB ELITE Wireless Gaming Headset",
+    "category": "headset",
+    "price": 2650,
+    "oldPrice": 4150,
+    "image": "https://shop.octotech.mv/storage/products/B16pRNFsmdlz8MqDqbbEJqluSEuSvgAquFow5zRX.webp",
+    "description": "Premium wireless RGB gaming headset from CORSAIR featuring immersive audio, comfortable design, and a high-quality detachable microphone.",
+    "specification": [
+      "Compatibility: PC, Mac, PlayStation 5, and PlayStation 4.",
+      "Impedance: 32 Ohms",
+      "Microphone: omnidirectional and Non-detachable",
+      "Battery Capacity: 1000mAh"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Fantech TRINITY MH88 Multi Platform Gaming Headset",
+    "category": "headset",
+    "price": 1000,
+    "oldPrice": 1050,
+    "image": "https://shop.octotech.mv/storage/products/nverlVR7l28UyE6ntvPppzJ74UZ45wW8f8EGq0NE.png",
+    "description": "Multi-platform wired gaming headset with clear audio, noise-canceling microphone, and compatibility across PC, consoles, and mobile devices.",
+    "specification": [
+      "Compatibility: PC, PlayStation, Xbox, and Mobile Devices",
+      "Impedance: 32 Ohms",
+      "Microphone: omnidirectional and noise-canceling",
+      "No Battery Capacity, it is a strictly wired headset"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Redragon M612 Predator RGB Gaming Mouse",
+    "category": "mouse",
+    "price": 900,
+    "oldPrice": 1200,
+    "image": "https://shop.octotech.mv/storage/products/Ckw7kdkYWy6jF7qOuHZY71pQiQrG9uXPxmbUiX0h.webp",
+    "description": "RGB gaming mouse featuring customizable lighting, ergonomic design, and accurate tracking for gaming and everyday computer use.",
+    "specification": [
+      "Compatibility: Windows and macOS",
+      "Weight: 110 grams",
+      "Lighting: 5 dynamic RGB backlit modes"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Logitech G102 LightSync Gaming Wired Mouse - Black",
+    "category": "mouse",
+    "price": 900,
+    "oldPrice": 1600,
+    "image": "https://shop.octotech.mv/storage/products/VBnU1FhtvpP4ABkbyOfnTA3KFONeDqBLAtugqIHy.png",
+    "description": "Reliable wired gaming mouse with LIGHTSYNC RGB lighting, lightweight construction, and precise tracking for competitive gaming.",
+    "specification": [
+      "OS Compatibility: Windows 7 or later, macOS, Chrome OS",
+      "Weight: 85 grams",
+      "Lighting: LIGHTSYNC RGB with approximately 16.8 million colors"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Razer DeathAdder Essential Gaming Mouse - Black",
+    "category": "mouse",
+    "price": 1000,
+    "oldPrice": 1350,
+    "image": "https://shop.octotech.mv/storage/products/zAYNq5yNfjRB0E4FVQejSHDB1SYMGym23hyVnXiw.png",
+    "description": "Essential gaming mouse from Razer with accurate optical sensor, ergonomic design, and reliable performance for everyday gaming.",
+    "specification": [
+      "OS Compatibility: Windows 10 or later, macOS",
+      "Weight: 96 grams",
+      "Lighting: single-color green lighting"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Redragon K671 Mechanical Gaming Keyboard Wired",
+    "category": "keyboard",
+    "price": 1750,
+    "oldPrice": 2050,
+    "image": "https://shop.octotech.mv/storage/products/PuG9uGQeIXgfL2czobUxTuYMzvANxrbEUNELLqgd.webp",
+    "description": "Mechanical gaming keyboard with durable key switches, customizable features, and responsive controls designed for gaming and productivity.",
+    "specification": [
+      "Special Features: Spill-proof design, dedicated Windows key lock, and macro editing support (via software)",
+      "Keycaps: Double-shot ABS (or PBT depending on regional variation)",
+      "Compatibility: Windows (software), PC, and Mac"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Razer Huntsman Mini 60% Mechanical Gaming Keyboard",
+    "category": "keyboard",
+    "price": 2450,
+    "oldPrice": 3850,
+    "image": "https://shop.octotech.mv/storage/products/FIXRtW5hHJUlpq1mcTASQeq3T7Ydz1kUqYGWwTEJ.png",
+    "description": "Compact 60% mechanical gaming keyboard with Razer optical switches, fast response time, and onboard profile storage.",
+    "specification": [
+      "Switch Types: Razer Clicky Optical (Purple) or Linear Optical (Red)",
+      "Polling Rate: Up to 1000 Hz Ultrapolling",
+      "Memory: Onboard hybrid storage for up to 5 profiles"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "iClever Solar Bluetooth, Wireless with Solar & Indoor Light Charging Keyboard",
+    "category": "keyboard",
+    "price": 800,
+    "oldPrice": 1500,
+    "image": "https://shop.octotech.mv/storage/products/zmIAwN086EosZJuWVD5GM2lMEk7SfWYi8aGGb3S3.png",
+    "description": "Wireless solar-powered keyboard with quiet low-profile keys and compatibility across multiple operating systems and devices.",
+    "specification": [
+      "Compatibility: Fully supports Windows, macOS, iOS, and Android devices.",
+      "Key Switches: Quiet, low-profile scissor switches with a 2.1 mm (0.083 in) key travel.",
+      "Power: Built-in solar panel and an auxiliary CR2032 coin cell battery slot for backup."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "MSI MAG 255XF 24.5inch FHD 300Hz IPS Gaming Monitor",
+    "category": "monitors",
+    "price": 5350,
+    "oldPrice": 6550,
+    "image": "https://shop.octotech.mv/storage/products/NokdZYswKKCtiHoH4LVajzWdhQ1v5fminpXHOqrw.webp",
+    "description": "High refresh rate gaming monitor featuring a 300Hz IPS display, fast response time, and eye-care technologies for competitive gaming.",
+    "specification": [
+      "Screen Size: 24.5 inches (flat)",
+      "Eye Care: Less Blue Light and Anti-Flicker technology",
+      "Response Time: 0.5ms (GtG, Min.)"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "ACER Nitro VG271U 27 IPS WQHD (2560x1440) 180Hz Gaming Monitor",
+    "category": "monitors",
+    "price": 5550,
+    "oldPrice": 8100,
+    "image": "https://shop.octotech.mv/storage/products/eLiZDJzDHmNNFwfDSZX0PSuVNEbdAKEFcEIVHSm5.png",
+    "description": "27-inch WQHD gaming monitor with high resolution, smooth 180Hz refresh rate, fast response time, and vibrant IPS panel technology.",
+    "specification": [
+      "Screen Size: 27 inches",
+      "Eye Care: Filters out harmful Blue Light and Anti-Flicker technology",
+      "Response Time: 1ms (GtG) with overdrive up to 0.5ms (GtG)"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "SAMSUNG Odyssey G4 G40B FHD 240Hz Gaming Monitor",
+    "category": "monitors",
+    "price": 6250,
+    "oldPrice": 8500,
+    "image": "https://shop.octotech.mv/storage/products/i6Hzac9UgUAVurjJInNpcpBo3DCK9HSpWHK6d6UI.png",
+    "description": "Samsung Odyssey gaming monitor with 240Hz refresh rate, fast response time, and gaming-focused features for smooth gameplay.",
+    "specification": [
+      "Screen Size: 25 inches (flat)",
+      "Eye Care: Less Blue Light (Eye Saver Mode) and Anti-Flicker technology",
+      "Response Time: 1ms (GtG, Min.)"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Kingston FURY Beast RAM",
+    "category": "ram",
+    "price": 21100,
+    "oldPrice": 27800,
+    "image": "https://shop.octotech.mv/storage/products/fiDic5N5tCWQMcMcJo87tqCCQGTMDf4HKtguEw0T.png",
+    "description": "High-capacity DDR5 gaming memory kit designed for powerful gaming PCs, multitasking, and demanding applications.",
+    "specification": [
+      "Memory Type: DDR5",
+      "Capacity: 64GB Kit",
+      "Speeds Available: 3733 MT/s"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "KLEVV CRAS V RAM",
+    "category": "ram",
+    "price": 12550,
+    "oldPrice": 14000,
+    "image": "https://shop.octotech.mv/storage/products/fNnDBtdatLgA9fbRYFLGncNdoWH0SFeptOYxhrbN.png",
+    "description": "Premium DDR5 RGB memory kit offering high-speed performance, low latency, and stylish design for modern gaming builds.",
+    "specification": [
+      "Memory Type: DDR5 Unbuffered DIMM",
+      "Capacity: 32GB Kit",
+      "Speeds Available: 6000 MT/s"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "G.SKILL RipjawsV RAM",
+    "category": "ram",
+    "price": 6750,
+    "oldPrice": 7550,
+    "image": "https://shop.octotech.mv/storage/products/LIRwup6xrCOtWXoyWEhYWnWL49hDivYrYRFzamvN.png",
+    "description": "Reliable DDR4 gaming memory kit providing stable performance and improved multitasking capability for compatible systems.",
+    "specification": [
+      "Memory Type: DDR4",
+      "Capacity: 32GB Kit",
+      "Speed Ratings: 2133 MHz"
+    ]
+  }
+]
