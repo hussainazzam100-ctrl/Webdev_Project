@@ -497,6 +497,62 @@ function openPanel(type) {
                 <div class="panel-items-list" style="margin-top:20px;">${itemsHTML}</div>
             `;
         }
+    
+    } else if (type === "admin") {
+
+    content.innerHTML = `
+        <div class="admin-dashboard">
+
+            <div class="admin-header">
+                <div>
+                    <h2>Admin Dashboard</h2>
+                    <p>Manage your Duckyvibes store</p>
+                </div>
+            </div>
+
+            <div class="admin-stats">
+
+                <div class="admin-stat-card">
+                    <span>Products</span>
+                    <strong id="adminProductCount">...</strong>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span>Orders</span>
+                    <strong>0</strong>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span>Users</span>
+                    <strong>0</strong>
+                </div>
+
+            </div>
+
+            <div class="admin-section">
+
+                <div class="admin-section-header">
+                    <h3>Products</h3>
+
+                    <button
+                        class="add-cart admin-add-button"
+                        onclick="showAddProductForm()"
+                    >
+                        + Add Product
+                    </button>
+                </div>
+
+                <div id="adminProductList">
+                    <p>Loading products...</p>
+                </div>
+
+            </div>
+
+        </div>
+    `;
+
+    loadAdminProducts();
+
     } else if (type === "login") {
       content.innerHTML = `
         <h2>Account Login</h2>
@@ -560,23 +616,31 @@ function openPanel(type) {
 
             if (data.success) {
 
-                message.textContent = "Login successful!";
+    message.innerHTML = `
+        Login successful!
+    `;
 
-                console.log("Logged in:", username);
-                console.log("Admin:", data.is_staff);
+    console.log("Logged in:", data.username);
+    console.log("Admin:", data.is_staff);
 
-                if (data.is_staff) {
-                    message.innerHTML = `
-                        Login successful!<br>
-                        <a href="http://127.0.0.1:8000/admin/">
-                            Open Admin Panel
-                        </a>
-                    `;
-                }
+    if (data.is_staff) {
 
-            } else {
-                message.textContent = data.message;
-            }
+        message.innerHTML = `
+            <p>Welcome, ${data.username}!</p>
+
+            <button
+                class="add-cart"
+                onclick="openPanel('admin')"
+                style="margin-top:10px;"
+            >
+                Open Admin Dashboard
+            </button>
+        `;
+    }
+
+    } else {
+    message.textContent = data.message;
+    }
 
         } catch (error) {
 
@@ -644,7 +708,12 @@ async function loadProducts() {
     const timeoutId = setTimeout(() => controller.abort(), 2000);
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/products-data/');
+        const response = await fetch(
+            'http://127.0.0.1:8000/products-data/',
+            {
+                signal: controller.signal
+            }
+        );
 
         if (!response.ok) {
             throw new Error('Failed to load products');
@@ -652,23 +721,286 @@ async function loadProducts() {
 
         products = await response.json();
 
-        console.log('Products loaded:', products);
+        console.log('Products loaded from Django:', products);
 
+        showStatusBanner(
+            '✓ LIVE MODE — Connected to Django backend.', 2000
+        );
 
     } catch (error) {
         console.error('Error loading products:', error);
-        products = FALLBACK_PRODUCTS; //TO allow access ui interaction when backend server is down or not setup 
 
-        const statusBanner = document.getElementById('status-banner');
+        products = FALLBACK_PRODUCTS;
 
-        if (statusBanner) {
-        statusBanner.innerText = 'Demo Mode (Offline)';
-        }
+        showStatusBanner(
+            '⚠ DEMO MODE — Backend unavailable. Showing fallback products.', 5000
+        );
+
     } finally {
+        clearTimeout(timeoutId);
+
         renderProductGrids();
         loadFilteredProducts();
         loadProductDetailPage();
         setupCategoryFilters();
+    }
+}
+
+function showStatusBanner(message, duration = 2000) {
+    const statusBanner = document.getElementById('status-banner');
+
+    if (!statusBanner) return;
+
+    statusBanner.innerText = message;
+    statusBanner.classList.add('active');
+
+    setTimeout(() => {
+        statusBanner.classList.remove('active');
+    }, duration);
+}
+
+async function loadAdminProducts() {
+
+    const productList = document.getElementById("adminProductList");
+
+    if (!productList) return;
+
+    try {
+
+        const response = await fetch(
+            "http://127.0.0.1:8000/admin-products/",
+            {
+                method: "GET",
+                credentials: "include"
+            }
+        );
+
+        if (!response.ok) {
+
+            if (response.status === 302 || response.status === 403) {
+                throw new Error("Unauthorized");
+            }
+
+            throw new Error("Failed to load products");
+        }
+
+        const adminProducts = await response.json();
+
+        const count = document.getElementById("adminProductCount");
+
+        if (count) {
+            count.textContent = adminProducts.length;
+        }
+
+        if (adminProducts.length === 0) {
+
+            productList.innerHTML = `
+                <p class="admin-empty">
+                    No products found.
+                </p>
+            `;
+
+            return;
+        }
+
+        productList.innerHTML = adminProducts.map(product => `
+
+            <div class="admin-product">
+
+                <img
+                    src="${product.image}"
+                    alt="${product.name}"
+                >
+
+                <div class="admin-product-info">
+
+                    <h4>${product.name}</h4>
+
+                    <p>
+                        ${product.category}
+                    </p>
+
+                    <strong>
+                        MVR ${product.price.toLocaleString()}
+                    </strong>
+
+                </div>
+
+                <div class="admin-product-actions">
+
+                    <button
+                        onclick="editProduct(${product.id})"
+                    >
+                        Edit
+                    </button>
+
+                    <button
+                        class="admin-delete"
+                        onclick="deleteProduct(${product.id})"
+                    >
+                        Delete
+                    </button>
+
+                </div>
+
+            </div>
+
+        `).join("");
+
+    } catch (error) {
+
+        console.error(error);
+
+        productList.innerHTML = `
+            <p class="admin-error">
+                Unable to load admin products.
+            </p>
+        `;
+    }
+}
+
+async function deleteProduct(productId) {
+
+    if (!confirm("Are you sure you want to delete this product?")) {
+        return;
+    }
+
+    try {
+
+        const response = await fetch(
+            `http://127.0.0.1:8000/admin-products/${productId}/delete/`,
+            {
+                method: "DELETE",
+                credentials: "include"
+            }
+        );
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(data.message || "Delete failed");
+        }
+
+        alert("Product deleted successfully.");
+
+        await loadAdminProducts();
+
+    } catch (error) {
+
+        console.error("Delete error:", error);
+
+        alert("Unable to delete product.");
+    }
+}
+
+function showAddProductForm() {
+
+    const productList = document.getElementById("adminProductList");
+
+    productList.innerHTML = `
+        <div class="admin-product-form">
+
+            <h3>Add Product</h3>
+
+            <input id="newProductName"
+                   type="text"
+                   placeholder="Product name">
+
+            <input id="newProductCategory"
+                   type="text"
+                   placeholder="Category">
+
+            <input id="newProductPrice"
+                   type="number"
+                   placeholder="Price">
+
+            <input id="newProductOldPrice"
+                   type="number"
+                   placeholder="Old price">
+
+            <input id="newProductImage"
+                   type="text"
+                   placeholder="Image URL">
+
+            <textarea id="newProductDescription"
+                      placeholder="Description"></textarea>
+
+            <textarea id="newProductSpecifications"
+                      placeholder="Specifications, one per line"></textarea>
+
+            <div>
+                <button onclick="submitNewProduct()">
+                    Add Product
+                </button>
+
+                <button onclick="loadAdminProducts()">
+                    Cancel
+                </button>
+            </div>
+
+        </div>
+    `;
+}
+
+async function submitNewProduct() {
+
+    const specifications =
+        document.getElementById("newProductSpecifications")
+        .value
+        .split("\n")
+        .map(s => s.trim())
+        .filter(Boolean);
+
+    const product = {
+
+        name: document.getElementById("newProductName").value,
+
+        category: document.getElementById("newProductCategory").value,
+
+        price: document.getElementById("newProductPrice").value,
+
+        oldPrice: document.getElementById("newProductOldPrice").value,
+
+        image: document.getElementById("newProductImage").value,
+
+        description:
+            document.getElementById("newProductDescription").value,
+
+        specifications: specifications
+    };
+
+    try {
+
+        const response = await fetch(
+            "http://127.0.0.1:8000/admin-products/add/",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                credentials: "include",
+
+                body: JSON.stringify(product)
+            }
+        );
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(data.message || "Failed to add product");
+        }
+
+        alert("Product added successfully!");
+
+        await loadAdminProducts();
+
+    } catch (error) {
+
+        console.error("Add product error:", error);
+
+        alert("Unable to add product.");
     }
 }
 
