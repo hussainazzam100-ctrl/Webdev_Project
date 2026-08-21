@@ -5,9 +5,7 @@ from .models import Product
 
 
 from django.contrib.auth import authenticate, login, logout
-from django.shortcuts import redirect
 
-from django.contrib.auth.decorators import user_passes_test
 from django.views.decorators.http import require_http_methods
 
 from django.views.decorators.csrf import csrf_exempt
@@ -77,7 +75,23 @@ def logout_view(request):
     })
 
 def staff_required(view_func):
-    return user_passes_test(lambda user: user.is_staff)(view_func)
+    def wrapper(request, *args, **kwargs):
+
+        if not request.user.is_authenticated:
+            return JsonResponse({
+                "success": False,
+                "message": "Login required"
+            }, status=401)
+
+        if not request.user.is_staff:
+            return JsonResponse({
+                "success": False,
+                "message": "Admin access required"
+            }, status=403)
+
+        return view_func(request, *args, **kwargs)
+
+    return wrapper
 
 @staff_required
 def admin_products(request):
@@ -99,25 +113,6 @@ def admin_products(request):
 
     return JsonResponse(data, safe=False)
 
-
-def staff_required(view_func):
-    def wrapper(request, *args, **kwargs):
-
-        if not request.user.is_authenticated:
-            return JsonResponse({
-                "success": False,
-                "message": "Login required"
-            }, status=401)
-
-        if not request.user.is_staff:
-            return JsonResponse({
-                "success": False,
-                "message": "Admin access required"
-            }, status=403)
-
-        return view_func(request, *args, **kwargs)
-
-    return wrapper
 
 @csrf_exempt
 @staff_required

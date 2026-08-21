@@ -1,0 +1,778 @@
+MAIN FEATURES 
+| Major feature                      | What you can say                                                                          |
+| ---------------------------------- | ----------------------------------------------------------------------------------------- |
+| **Product Catalogue**              | Products are dynamically displayed and organized into categories.                         |
+| **Search & Filtering**             | Users can search products in real time and filter products by category.                   |
+| **Product Details**                | Each product has its own detail page containing pricing and specifications.               |
+| **Shopping Cart**                  | Users can add products, change quantities, remove products and view the total.            |
+| **Wishlist**                       | Users can save products and move them to the cart later.                                  |
+| **User Authentication**            | Login information is sent to the Django backend for authentication.                       |
+| **Admin Management**               | Authorized users can view, add and delete products through an admin dashboard.            |
+| **Backend Integration & Fallback** | Products are loaded from Django, with a fallback dataset when the backend is unavailable. |
+
+
+ALL 32 FEATURES 
+
+Here are the frontend features you can identify/present for your project.
+
+1. Header / Navigation Bar
+
+The website has a main header containing the Duckyvibes logo, brand name, search bar, and account-related controls. The header uses Flexbox to arrange these elements horizontally.
+
+Purpose: Provides the main navigation and access to important shopping functions.
+
+2. Duckyvibes Branding & Logo
+
+The header contains a custom Duckyvibes logo image and the Duckyvibes brand name.
+
+The logo also has a hover animation: it slightly enlarges and rotates when the user moves the mouse over it.
+
+Feature: Interactive branding / hover animation.
+
+3. Product Search
+
+There is a search field in the navigation bar that allows users to search products.
+
+The JavaScript searches through both the product name and category as the user types.
+
+For example, searching:
+
+"Razer"
+
+can immediately show matching products.
+
+Feature: Real-time client-side product search.
+
+4. Search Suggestions / Dropdown
+
+The search isn't simply a textbox. Matching products appear in a dropdown underneath it, showing:
+
+Product image
+Product name
+Product price
+
+The user can click a result and go directly to that product's detail page.
+
+It also displays "No products found" when there are no matches.
+
+The dropdown automatically disappears when the user clicks elsewhere.
+
+Feature: Autocomplete/search suggestions.
+
+5. Cart System
+
+Users can add products to their shopping cart directly from product cards.
+
+The cart supports:
+
+Adding products
+Increasing quantity
+Decreasing quantity
+Removing products
+Calculating the total price
+Viewing the products currently in the cart
+
+The quantity system also prevents items from remaining in the cart when their quantity reaches zero.
+
+Feature: Functional shopping cart.
+
+6. Persistent Cart Using Local Storage
+
+One particularly useful frontend feature is that the cart is stored using the browser's localStorage.
+
+That means the cart isn't simply held temporarily in the JavaScript variable. The browser saves it, allowing the cart state to survive page refreshes.
+
+Feature: Client-side persistent shopping state.
+
+7. Wishlist System
+
+The website also has a wishlist.
+
+Users can click the ❤️ button on a product to:
+
+Add it to their wishlist
+Remove it from their wishlist
+View their wishlist
+Move wishlist products into their cart
+
+The wishlist is also stored using localStorage.
+
+Feature: Persistent wishlist functionality.
+
+8. Slide-Out Side Panel
+
+Instead of navigating to separate pages for Cart, Wishlist, Login, and Admin, your website uses a slide-out panel from the right side.
+
+The panel starts outside the screen and moves into view when the .active class is added.
+
+This creates a modern e-commerce UI similar to drawer menus used by many shopping websites.
+
+Feature: Off-canvas / slide-out interface.
+
+9. Cart Side Panel
+
+Clicking Cart opens the side panel and displays the current cart contents.
+
+It shows:
+
+Product image
+Product name
+Price
+Quantity
++ and − controls
+Remove button
+Total price
+Checkout button
+
+Feature: Interactive shopping-cart drawer.
+
+10. Wishlist Side Panel
+
+The Wishlist uses the same side-panel system.
+
+Products inside it can be:
+
+Viewed
+Removed
+Moved to the cart
+
+Feature: Interactive wishlist drawer.
+
+11. Category Navigation
+
+You have six product categories:
+
+Laptops
+Headsets
+Mouse
+Keyboards
+Monitors
+RAM
+
+These are represented as clickable category navigation elements.
+
+Feature: Product category navigation.
+
+12. Category Filtering
+
+Clicking a category redirects the user to a filtered product page using a URL parameter such as:
+
+filter.html?category=laptop
+
+The JavaScript then reads the category from the URL and displays only matching products.
+
+Feature: Dynamic category filtering.
+
+13. Dynamic Product Rendering
+
+Your HTML doesn't manually contain every individual product card.
+
+Instead, JavaScript generates the product cards dynamically from product data.
+
+This is important because adding a product to your data automatically allows it to be rendered on the frontend.
+
+Feature: Data-driven UI / dynamic DOM rendering.
+
+14. Product Cards
+
+Each product card contains:
+
+Product image
+Product name
+Current price
+Previous price
+Add to Cart button
+Wishlist button
+Link to the detailed product page
+
+The old price is displayed using a strikethrough, making the product appear discounted.
+
+Feature: E-commerce product cards with pricing information.
+
+15. Responsive Product Grid
+
+Your product layout uses CSS Grid:
+
+repeat(auto-fit, minmax(250px, 1fr))
+
+This allows the number of products per row to adapt based on the available screen width.
+
+Feature: Responsive/adaptive product layout.
+
+16. Individual Product Pages
+
+Clicking a product takes the user to something like:
+
+product.html?id=1
+
+JavaScript reads the product ID from the URL and dynamically loads the appropriate product information.
+
+The product page can display:
+
+Product image
+Product name
+Current price
+Previous price
+Specifications
+
+Feature: Dynamic product-detail pages.
+
+17. Related Products
+
+The individual product page also finds other products in the same category and displays them as related products.
+
+For example, opening a gaming laptop can show other laptops underneath.
+
+Feature: Related-product recommendation section.
+
+18. Login Interface
+
+The account button opens an Account Login interface inside the side panel.
+
+It contains:
+
+Username field
+Password field
+Login button
+Login status/message area
+
+Feature: User authentication interface.
+
+19. Frontend-to-Backend Login
+
+This is one of the more significant features.
+
+The frontend sends the username and password to your Django backend using fetch():
+
+/login/
+
+It uses a POST request and includes credentials/cookies.
+
+So this isn't merely a fake login form—the frontend is designed to communicate with your Django backend.
+
+Feature: Backend API integration / authentication.
+
+20. Admin Dashboard
+
+Your frontend contains an admin dashboard that can be opened after successful authentication when the logged-in user is identified as staff.
+
+The dashboard contains:
+
+Product count
+Order count
+User count
+Product management section
+Add Product button
+
+Feature: Frontend administrative dashboard.
+
+21. Admin Product Management
+
+The admin interface retrieves products from the Django backend and displays them with:
+
+Image
+Product name
+Category
+Price
+Edit button
+Delete button
+
+Feature: Product management interface.
+
+22. Add Product Function
+
+The admin interface allows an administrator to open an Add Product form.
+
+The form includes:
+
+Product name
+Category
+Price
+Old price
+Image URL
+Description
+Specifications
+
+The data is then sent to the Django backend using a POST request.
+
+Feature: Frontend CRUD — Create.
+
+23. Delete Product
+
+The admin interface allows administrators to delete products.
+
+Before deleting, it asks for confirmation:
+
+"Are you sure you want to delete this product?"
+
+Then it sends a DELETE request to the backend.
+
+Feature: Frontend CRUD — Delete.
+
+24. Live Backend / Demo Fallback System
+
+This is actually a good feature for a university project.
+
+Your frontend first attempts to retrieve products from the Django backend:
+
+/products-data/
+
+If successful, it operates in LIVE MODE.
+
+If the backend isn't available, it switches to the predefined FALLBACK_PRODUCTS dataset and operates in DEMO MODE.
+
+This means the frontend can still demonstrate products even when your backend isn't running.
+
+Feature: Backend failure handling / fallback data system.
+
+25. Connection Status Banner
+
+The website can display a status banner at the top of the screen.
+
+For example:
+
+✓ LIVE MODE — Connected to Django backend.
+
+or
+
+⚠ DEMO MODE — Backend unavailable. Showing fallback products.
+
+The banner automatically disappears after a specified amount of time.
+
+Feature: User feedback / system status notification.
+
+26. SVG Icons
+
+Your navigation uses inline SVG icons for:
+
+Cart
+Wishlist
+User/login
+
+This avoids needing image files for those icons and allows them to inherit the button's color.
+
+Feature: Scalable vector UI icons.
+
+27. Hover Effects and Transitions
+
+The interface contains several micro-interactions.
+
+Examples include:
+
+Logo scaling/rotation
+Search field focus glow
+Navigation button color changes
+Icon scaling
+Search-result hover effects
+Cart quantity button hover effects
+Checkout button hover effects
+
+Feature: UI micro-interactions and visual feedback.
+
+28. Responsive Layout
+
+You use CSS mechanisms such as:
+
+Flexbox
+CSS Grid
+auto-fit
+minmax()
+max-width: 90vw
+
+These allow the interface to adapt to different viewport sizes.
+
+Feature: Responsive/adaptive frontend design.
+
+29. Product Pricing / Discount Display
+
+Products contain both a current price and an oldPrice.
+
+The frontend displays the current MVR price alongside the previous price with a strikethrough.
+
+Feature: Discount/old-price presentation.
+
+30. Empty-State Handling
+
+The application handles situations where there is no data.
+
+Examples:
+
+Empty cart → "Your cart is currently empty."
+Empty wishlist → "Your wishlist is currently empty."
+Empty category → "No products available in this category."
+No search results → "No products found"
+No admin products → "No products found."
+
+This is good frontend practice because the UI doesn't simply break when there is no data.
+
+31. Error Handling
+
+The JavaScript includes error handling for backend operations.
+
+For example, if the admin product request fails, the frontend displays:
+
+"Unable to load admin products."
+
+Similarly, login failure displays a connection error rather than leaving the user with a broken interface.
+
+Feature: Client-side error handling and user feedback.
+
+32. Footer
+
+The website has a footer containing:
+
+Email
+Socials section
+Contact information
+
+It uses Flexbox to center and arrange the footer content.
+
+Feature: Website footer/contact information. 
+
+BACKEND 
+
+1. Product database
+
+This is the foundation.
+
+Instead of hardcoding all products into HTML, Django stores them in the database through the Product model.
+
+That means your frontend can request:
+
+"Give me all products"
+
+and Django retrieves them from the database.
+
+That's a major difference between a static website and a full-stack application.
+
+2. Product API
+
+You created:
+
+/products-data/
+
+Your product_data() view queries the database and converts each product into JSON.
+
+So the architecture is essentially:
+
+SQLite Database
+       ↓
+Django Model
+       ↓
+Django View
+       ↓
+JSON API
+       ↓
+JavaScript
+       ↓
+Frontend
+
+That's a legitimate frontend/backend separation.
+
+3. Dynamic product catalogue
+
+Your frontend doesn't need to know every product beforehand.
+
+Django provides the product data, and JavaScript renders it.
+
+You can therefore add a new product to the database and have it appear on the website without manually writing another HTML product card.
+
+That's one of the strongest parts of your project.
+
+4. Product categories
+
+Your database has a category field:
+
+category = models.CharField(max_length=100)
+
+which allows the frontend to organize products into categories.
+
+Currently:
+
+Laptop
+Headset
+Mouse
+Keyboard
+Monitor
+RAM
+
+Your JSON data reflects this structure.
+
+5. Product specifications stored as JSON
+
+This is actually a nice design choice.
+
+specification = models.JSONField(default=list, null=True)
+
+Instead of making something like:
+
+specification1
+specification2
+specification3
+specification4
+
+you store a list.
+
+For example, a laptop can have:
+
+[
+    "AMD Ryzen 7 250",
+    "NVIDIA RTX 5060",
+    "16GB RAM DDR5",
+    "512 GB NVMe M.2 SSD"
+]
+
+Your actual product data uses this structure.
+
+That's flexible and appropriate for product specifications.
+
+6. User authentication
+
+You are using Django's built-in authentication system:
+
+authenticate()
+login()
+logout()
+
+That's significantly better than trying to manually store usernames/passwords yourself.
+
+Your frontend sends credentials → Django authenticates them → Django creates a session.
+
+You also return:
+
+{
+    "success": true,
+    "is_staff": true,
+    "username": "..."
+}
+
+which allows your frontend to determine whether the user has administrative privileges.
+
+7. Session-based login
+
+You're using Django sessions rather than inventing your own authentication mechanism.
+
+This is important.
+
+The architecture is basically:
+
+User
+ ↓
+Login form
+ ↓
+POST /login/
+ ↓
+Django authenticate()
+ ↓
+Django session
+ ↓
+Browser cookie
+ ↓
+Authenticated requests
+
+That's proper web application architecture.
+
+8. Staff/admin authorization
+
+You've gone beyond simply having a login.
+
+You distinguish between:
+
+authenticated user
+        ↓
+is_staff?
+   ↙        ↘
+ NO          YES
+ ↓            ↓
+403          Admin
+
+Your staff_required decorator checks whether the user is authenticated and whether they're a staff member.
+
+That's the correct general concept for protecting admin functionality.
+
+9. Admin product retrieval
+
+You have:
+
+/admin-products/
+
+which provides product data specifically for the administrative interface.
+
+This means your admin frontend isn't just displaying a hardcoded list.
+
+It retrieves the actual database contents.
+
+10. Add product functionality
+
+You implemented:
+
+POST /admin-products/add/
+
+The frontend can send product information and Django creates a new:
+
+Product.objects.create(...)
+
+So you've implemented the Create part of CRUD.
+
+11. Delete product functionality
+
+You've also implemented:
+
+DELETE /admin-products/<product_id>/delete/
+
+Django finds the product:
+
+Product.objects.get(id=product_id)
+
+and deletes it.
+
+That's the Delete part of CRUD.
+
+12. Custom product import command
+
+This is one of the things I'd mention if you're explaining the project to your lecturer.
+
+You created a custom Django management command:
+
+python manage.py ...
+
+that imports products from:
+
+product_data.json
+
+and uses:
+
+update_or_create()
+
+This is much better than manually entering 18 products through the admin interface.
+
+Your data contains structured product information, including descriptions and technical specifications.
+
+So you've essentially built a small data seeding/import system.
+
+13. Database migrations
+
+You've used Django migrations to evolve your database.
+
+Your migration history shows:
+
+0001
+Product created
+
+
+0002
+oldprice added
+specification added
+
+
+0003
+specification changed from TextField → JSONField
+
+That demonstrates that you weren't simply throwing everything into one database and hoping it worked.
+
+You changed your schema as the requirements evolved.
+
+That's normal software-development workflow.
+
+14. Frontend/backend CORS configuration
+
+You configured:
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:3000",
+    "http://localhost:3000",
+]
+
+and:
+
+CORS_ALLOW_CREDENTIALS = True
+
+This tells Django which frontend origins are allowed to communicate with it and permits credentials such as session cookies.
+
+That's relevant because you're running your frontend/backend separately during development.
+
+15. CSRF/session configuration
+
+You also configured:
+
+SESSION_COOKIE_SAMESITE = "Lax"
+SESSION_COOKIE_HTTPONLY = True
+
+HttpOnly is particularly useful because JavaScript cannot directly access the session cookie.
+
+Again: you're actually dealing with real web application concerns rather than only designing the UI.
+
+16. Django Admin
+
+You registered:
+
+admin.site.register(Product)
+
+meaning Django's built-in /admin/ interface can manage your Product model.
+
+So you actually have two administrative interfaces:
+
+Django Admin
+/admin/
+Your custom frontend admin
+Admin panel → JavaScript → Django API
+
+That's worth mentioning in your project presentation.
+
+17. Error/status responses
+
+Your backend returns appropriate HTTP statuses in several situations.
+
+For example:
+
+401 → authentication required / invalid login
+403 → insufficient permissions
+404 → product doesn't exist
+405 → wrong HTTP method
+
+That's good API behavior.
+
+18. HTTP method separation
+
+You've also started treating different operations appropriately:
+
+GET     → retrieve products
+POST    → login / add product
+DELETE  → delete product
+
+That's much better than making every operation a POST request.
+
+19. Integration with your frontend
+
+This is the important overall picture.
+
+Your project is essentially:
+
+                 Duckyvibes
+                     │
+          ┌──────────┴──────────┐
+          │                     │
+      FRONTEND               BACKEND
+          │                     │
+ HTML/CSS/JS                Django
+          │                     │
+          │                 Django ORM
+          │                     │
+          │                  SQLite
+          │
+          ├── Search
+          ├── Categories
+          ├── Product cards
+          ├── Product pages
+          ├── Cart
+          ├── Wishlist
+          ├── Login UI
+          └── Admin UI
+                    ↕
+               JSON API
+
+That's a legitimate full-stack architecture for a university project.
+
+
+
+
