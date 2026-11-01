@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duckyvibes | Tech Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f6f7fb;
+            color: #20232b;
+        }
+
+        button, input, select {
+            font: inherit;
+        }
+
+        header {
+            background: #fff;
+            padding: 18px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            border-bottom: 1px solid #e9e9ed;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+
+        .logo h1 {
+            font-size: 23px;
+            color: #242832;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header-links {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .header-links a {
+            text-decoration: none;
+            color: #444;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .header-links a:hover {
+            color: #6654d9;
+        }
+
+        .hero {
+            margin: 35px auto;
+            width: 86%;
+            min-height: 250px;
+            padding: 55px;
+            border-radius: 18px;
+            background: linear-gradient(120deg, #24243e, #6654d9);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h2 {
+            font-size: clamp(30px, 4vw, 45px);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #e1defb;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: rgba(255,255,255,.15);
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 18px;
+        }
+
+        main {
+            width: 86%;
+            margin: 55px auto;
+        }
+
+        .section-heading {
+            margin-bottom: 25px;
+        }
+
+        .section-heading h2 {
+            font-size: 27px;
+            margin-bottom: 8px;
+        }
+
+        .section-heading p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .search-box input,
+        .toolbar select {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #dedee6;
+            border-radius: 9px;
+            background: white;
+            outline: none;
+        }
+
+        .search-box input:focus,
+        .toolbar select:focus {
+            border-color: #6654d9;
+        }
+
+        .toolbar select {
+            width: auto;
+            min-width: 170px;
+            cursor: pointer;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .category-btn {
+            border: 1px solid #dedee6;
+            background: white;
+            padding: 9px 17px;
+            border-radius: 25px;
+            cursor: pointer;
+            color: #555;
+            transition: .2s;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background: #6654d9;
+            border-color: #6654d9;
+            color: white;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 23px;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ededf1;
+            border-radius: 13px;
+            overflow: hidden;
+            transition: transform .2s, box-shadow .2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0,0,0,.08);
+        }
+
+        .product-image {
+            height: 220px;
+            padding: 20px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .product-info {
+            padding: 20px;
+            border-top: 1px solid #f0f0f3;
+        }
+
+        .product-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #7566d9;
+            font-weight: bold;
+        }
+
+        .product-info h3 {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .description {
+            font-size: 13px;
+            color: #777;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .price-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 17px;
+            flex-wrap: wrap;
+        }
+
+        .price {
+            font-size: 19px;
+            font-weight: bold;
+            color: #252638;
+        }
+
+        .old-price {
+            color: #999;
+            font-size: 13px;
+            text-decoration: line-through;
+        }
+
+        .product-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            background: #6654d9;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .product-btn:hover {
+            background: #5140c0;
+        }
+
+        .empty-state {
+            display: none;
+            text-align: center;
+            padding: 65px 20px;
+            color: #777;
+            background: white;
+            border-radius: 12px;
+        }
+
+        footer {
+            margin-top: 70px;
+            padding: 35px 7%;
+            background: #222337;
+            color: #ccc;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        @media (max-width: 900px) {
+            .product-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .hero {
+                padding: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 5%;
+            }
+
+            .header-links {
+                gap: 12px;
+            }
+
+            .header-links a {
+                font-size: 12px;
+            }
+
+            .logo h1 {
+                font-size: 19px;
+            }
+
+            .logo img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .hero {
+                width: 90%;
+                padding: 30px 24px;
+                min-height: 210px;
+            }
+
+            main {
+                width: 90%;
+                margin-top: 40px;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-image {
+                height: 240px;
+            }
+
+            .toolbar {
+                align-items: stretch;
+            }
+
+            .toolbar select {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="/frontend/images/duckyvibes.png" alt="Duckyvibes logo">
+        <a href="/">
+            <h1>Duckyvibes</h1>
+        </a>
+    </div>
+
+    <nav class="header-links">
+        <a href="/">Home</a>
+        <a href="#products">Products</a>
+        <a href="/admin/">Admin</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="hero-label">WELCOME TO DUCKYVIBES</span>
+        <h2>Find your next favourite tech.</h2>
+        <p>
+            Explore our collection of technology and gaming products.
+            Discover something that matches your vibe.
+        </p>
+    </div>
+</section>
+
+<main id="products">
+
+    <div class="section-heading">
+        <h2>Explore Products</h2>
+        <p>Browse our available collection.</p>
+    </div>
+
+    <div class="toolbar">
+        <div class="search-box">
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search products..."
+                aria-label="Search products"
+            >
+        </div>
+
+        <select id="sortSelect" aria-label="Sort products">
+            <option value="default">Sort by: Default</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="name">Name: A to Z</option>
+        </select>
+    </div>
+
+    <div class="categories" id="categories">
+    <button class="category-btn active" data-category="all">
+        All Products
+    </button>
+
+    {% regroup products by category as category_list %}
+
+    {% for group in category_list %}
+        <button
+            class="category-btn"
+            data-category="{{ group.grouper|lower }}"
+        >
+            {{ group.grouper|title }}
+        </button>
+    {% endfor %}
+</div>
+
+    <section class="product-grid" id="productGrid">
+
+        {% for product in products %}
+            <article
+                class="product-card"
+                data-name="{{ product.name|lower }}"
+                data-category="{{ product.category|lower }}"
+                data-price="{{ product.price }}"
+            >
+
+                <div class="product-image">
+                    {% if product.image %}
+                        <img
+                            src="{{ product.image }}"
+                            alt="{{ product.name }}"
+                            loading="lazy"
+                        >
+                    {% else %}
+                        <span>No image available</span>
+                    {% endif %}
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        {{ product.category }}
+                    </span>
+
+                    <h3>{{ product.name }}</h3>
+
+                    <p class="description">
+                        {{ product.description|truncatewords:18 }}
+                    </p>
+
+                    <div class="price-row">
+                        <span class="price">
+                            MVR {{ product.price }}
+                        </span>
+
+                        {% if product.oldprice %}
+                            <span class="old-price">
+                                MVR {{ product.oldprice }}
+                            </span>
+                        {% endif %}
+                    </div>
+
+                    <a class="product-btn" href="/product/{{ product.id }}/">
+                        View Product
+                    </a>
+
+                </div>
+            </article>
+
+        {% empty %}
+            <p>No products are currently available.</p>
+        {% endfor %}
+
+    </section>
+
+    <div class="empty-state" id="emptyState">
+        <h3>No products found</h3>
+        <p>Try another search or category.</p>
+    </div>
+
+</main>
+
+<footer>
+    <p><strong>Duckyvibes.shop</strong></p>
+    <p>Technology for your vibe.</p>
+</footer>
+
+<script>
+    const searchInput = document.getElementById("searchInput");
+    const sortSelect = document.getElementById("sortSelect");
+    const productGrid = document.getElementById("productGrid");
+    const emptyState = document.getElementById("emptyState");
+    const categoryButtons = document.querySelectorAll(".category-btn");
+
+    let selectedCategory = "all";
+
+    function filterProducts() {
+        const search = searchInput.value.toLowerCase().trim();
+        const cards = Array.from(
+            productGrid.querySelectorAll(".product-card")
+        );
+
+        cards.forEach(card => {
+            const name = card.dataset.name;
+            const category = card.dataset.category;
+
+            const matchesSearch = name.includes(search);
+            const matchesCategory =
+                selectedCategory === "all" ||
+                category === selectedCategory.toLowerCase();
+
+            card.style.display =
+                matchesSearch && matchesCategory ? "" : "none";
+        });
+
+        const visibleCards = cards.filter(
+            card => card.style.display !== "none"
+        );
+
+        emptyState.style.display =
+            visibleCards.length === 0 ? "block" : "none";
+    }
+
+    categoryButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            categoryButtons.forEach(item =>
+                item.classList.remove("active")
+            );
+
+            button.classList.add("active");
+            selectedCategory = button.dataset.category;
+            filterProducts();
+        });
+    });
+
+    searchInput.addEventListener("input", filterProducts);
+
+    sortSelect.addEventListener("change", () => {
+        const cards = Array.from(
+            productGrid.querySelectorAll(".product-card")
+        );
+
+        const mode = sortSelect.value;
+
+        cards.sort((a, b) => {
+            if (mode === "low") {
+                return Number(a.dataset.price) -
+                       Number(b.dataset.price);
+            }
+
+            if (mode === "high") {
+                return Number(b.dataset.price) -
+                       Number(a.dataset.price);
+            }
+
+            if (mode === "name") {
+                return a.dataset.name.localeCompare(b.dataset.name);
+            }
+
+            return 0;
+        });
+
+        cards.forEach(card => productGrid.appendChild(card));
+        filterProducts();
+    });
+</script>
+
+</body>
+</html>

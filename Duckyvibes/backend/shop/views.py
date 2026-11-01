@@ -12,7 +12,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 def home(request):
-    products = Product.objects.all()
+    products = Product.objects.all().order_by("category", "name")
     return render(request, "shop/home.html", {"products": products})
 
 def product_data(request):
