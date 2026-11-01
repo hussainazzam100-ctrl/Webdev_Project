@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-vl874%s-8u=ugh3epny!ke0$l=0xaiggw_9mkrbi99=iptj)ys'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    "webdev-project-orod.onrender.com",
+]
 
 # Application definition
 
@@ -138,6 +139,7 @@ CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:3000",
+    "https://webdev-project-orod.onrender.com",
 ]
 
 SESSION_COOKIE_SAMESITE = "Lax"
